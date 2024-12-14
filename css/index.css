@@ -1,0 +1,14 @@
+.img-outer{
+    position: relative;
+}
+.img-outer::before{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(65, 65, 65, 0.427);
+    position: absolute;
+    top: 0;
+
+
+}
