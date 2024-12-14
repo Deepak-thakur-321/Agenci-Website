@@ -22,14 +22,14 @@
                     <nav class="navbar navbar-expand-lg bg-secondary">
                         <a href="" class="navbar-brand fs-3 ms-5 text-white">SAILOR</a>
 
-                        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav1">
+                        <button class="navbar-toggler" data-bs-toggle="modal" data-bs-target="#nav1">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
-                        <div class="collapse navbar-collapse justify-content-end align-content-center" id="nav1">
-                            <ul class="nav navbar-nav gap-5 fs-5 me-5 text-white">
+                        <div class="d-lg-block d-none ms-auto">
+                            <ul class="nav navbar-nav gap-5 fs-5 me-5 text-white ms-auto">
                                 <li class="nav-item">
-                                    <a href="index.html" class="nav-link text-white">Home</a>
+                                    <a href="" class="nav-link text-white">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="Service.html" class="nav-link text-white">Service</a>
@@ -54,6 +54,32 @@
                                 </li>
                             </ul>
                         </div>
+                           
+                        <div class="modal fade" id="nav1">
+                            <div class="modal-dialog">
+                                <div class="modal-content p-2">
+                                    <button class="btn-close ms-auto" data-bs-dismiss="modal"></button>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item border-0">
+                                            <a href="/" class="nav-link">Home</a>
+                                        </li>
+                                        <li class="list-group-item border-0">
+                                            <a href="Service.html" class="nav-link">Service</a>
+                                        </li>
+                                        <li class="list-group-item border-0">
+                                            <a href="Portfolio.html" class="nav-link">Portfolio</a>
+                                        </li>
+                                        <li class="list-group-item border-0">
+                                            <a href="Pricing.html" class="nav-link">Pricing</a>
+                                        </li>
+                                        <li class="list-group-item border-0">
+                                            <a href="#" class="nav-link">Blog</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    
                     </nav>
                 </header>
             </div>
@@ -80,7 +106,7 @@
             <div class="col-lg-3">
 
                 <div class="card">
-                    <div class="card-header text-center border-bottom-0">
+                    <div class="card-header text-center ">
                         <h3 class="card-title mb-3">Free</h3>
 
                     </div>
@@ -104,8 +130,11 @@
             <div class="col-lg-3">
 
                 <div class="card">
-                    <div class="card-body text-center lh-lg">
+                    <div class="card-header text-center">
                         <h3 class="card-title mb-3">Business</h3>
+                    </div>
+                    <div class="card-body text-center lh-lg">
+                      
                         <h4 class="card-subtitle"><sup>$</sup>19/month</h4>
                         <ul class="card-text list-unstyled mt-3">
                             <li>Aida dere</li>
@@ -122,7 +151,7 @@
             <div class="col-lg-3">
 
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header text-center">
                         <h3 class="card-title mb-3">Developer</h3>
                     </div>
                     <div class="card-body text-center lh-lg">
@@ -143,8 +172,11 @@
             <div class="col-lg-3">
 
                 <div class="card">
-                    <div class="card-body text-center lh-lg">
+                    <div class="card-header text-center text-center ">
                         <h3 class="card-title mb-3">Ultimate</h3>
+                    </div>
+                    <div class="card-body text-center lh-lg">
+                       
                         <h4 class="card-subtitle"><sup>$</sup>49/month</h4>
                         <ul class="card-text list-unstyled mt-3">
                             <li>Aida dere</li>
@@ -213,6 +245,8 @@
             </div>
         </div>
     </div>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

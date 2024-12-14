@@ -10,40 +10,76 @@
 <body>
 
     <!-- Navbar Summary This is without cdn,bootstrap links -->
+    <div class="container-fluid bg-secondary">
+        <div class="row">
+            <div class="col-lg-12">
+                <header>
+                    <nav class="navbar navbar-expand-lg bg-secondary">
+                        <a href="" class="navbar-brand fs-3 ms-5 text-white">SAILOR</a>
 
-    <nav class="navbar navbar-expand-lg bg-primary">
-        <a href="" class="navbar-brand fs-3 ms-5 text-dark">SAILOR</a>
+                        <button class="navbar-toggler" data-bs-toggle="modal" data-bs-target="#nav1">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav1">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end align-content-center" id="nav1">
-            <ul class="nav navbar-nav gap-3 fs-5 me-5 text-white">
-                <li class="nav-item">
-                    <a href="" class="nav-link text-white">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Service</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Contact</a>
-                </li>
-                <li class="nav-item align-content-center">
-                    <button class="btn btn-danger">Get Started</button>
-                </li>
-            </ul>
+                        <div class="d-lg-block d-none ms-auto">
+                            <ul class="nav navbar-nav gap-5 fs-5 me-5 text-white ms-auto">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link text-white">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="Service.html" class="nav-link text-white">Service</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="About.html" class="nav-link text-white">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="Portfolio.html" class="nav-link text-white">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="Pricing.html" class="nav-link text-white">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link text-white">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="Contact.html" class="nav-link text-white">Contact</a>
+                                </li>
+                                <li class="nav-item align-content-center">
+                                    <button class="btn btn-primary">Get Started</button>
+                                </li>
+                            </ul>
+                        </div>
+                           
+                        <div class="modal fade" id="nav1">
+                            <div class="modal-dialog">
+                                <div class="modal-content p-2">
+                                    <button class="btn-close ms-auto" data-bs-dismiss="modal"></button>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item border-0">
+                                            <a href="/" class="nav-link">Home</a>
+                                        </li>
+                                        <li class="list-group-item border-0">
+                                            <a href="Service.html" class="nav-link">Service</a>
+                                        </li>
+                                        <li class="list-group-item border-0">
+                                            <a href="Portfolio.html" class="nav-link">Portfolio</a>
+                                        </li>
+                                        <li class="list-group-item border-0">
+                                            <a href="Pricing.html" class="nav-link">Pricing</a>
+                                        </li>
+                                        <li class="list-group-item border-0">
+                                            <a href="#" class="nav-link">Blog</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </nav>
+                </header>
+            </div>
         </div>
-    </nav>
+    </div>
 
     <!-- <p>
         1. navbar: This is the main class for the navigation bar. It sets up the basic styling and structure for the navbar.
@@ -139,6 +175,8 @@
         buttons, respectively. They're used for navigating through the carousel items.
 
     </p>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
