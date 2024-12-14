@@ -12,3 +12,20 @@
 
 
 }
+.cap{
+    position: absolute !important;
+    top: 40% !important;
+}
+@media screen and (min-width:523px) and (max-width:774px) {
+    .cap{
+        position: absolute !important;
+        top: 20% !important;
+    }
+}
+
+@media screen and (max-width:524px) {
+    .cap{
+        position: absolute !important;
+        top: 5% !important;
+    }
+}
