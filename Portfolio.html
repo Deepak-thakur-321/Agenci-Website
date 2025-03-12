@@ -12,17 +12,25 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-    
+
 <body>
 
-    <div class="container-fluid bg-secondary">
+    <div class="container-fluid bg-secondary customNav">
         <div class="row">
             <div class="col-lg-12">
                 <header>
-                    <nav class="navbar navbar-expand-lg bg-secondary">
-                        <a href="" class="navbar-brand fs-3 ms-5 text-white">SAILOR</a>
+                    <!-- Desktop Navbar Start -->
+                    <nav class="navbar navbar-expand-lg bg-secondary customNavbar">
+                        <a href="index.html" class="navbar-brand fs-3 ms-5 text-white d-flex align-items-center gap-1">
+                            <span
+                                class="fs-1 fw-bold d-inline-block text-dark bg-white border border-white rounded-circle text-center"
+                                style="width: 45px; height: 45px; line-height: 43px;">
+                                A
+                            </span>
+                            <span class="fw-light" style="letter-spacing: 2px;">genci</span>
+                        </a>
 
-                        <button class="navbar-toggler" data-bs-toggle="modal" data-bs-target="#nav1">
+                        <button class="navbar-toggler bg-white" data-bs-toggle="modal" data-bs-target="#nav1">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
@@ -44,153 +52,299 @@
                                     <a href="Pricing.html" class="nav-link text-white">Pricing</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="" class="nav-link text-white">Blog</a>
-                                </li>
-                                <li class="nav-item">
                                     <a href="Contact.html" class="nav-link text-white">Contact</a>
                                 </li>
                                 <li class="nav-item align-content-center">
-                                    <button class="btn btn-primary">Get Started</button>
+                                    <a href="Contact.html">
+                                        <button class="btn btn-danger">Get Started</button>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
-                           
+                        <!-- Desktop Navbar end -->
+
+                        <!-- Mobile Navbar start -->
                         <div class="modal fade" id="nav1">
                             <div class="modal-dialog">
                                 <div class="modal-content p-2">
                                     <button class="btn-close ms-auto" data-bs-dismiss="modal"></button>
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item border-0">
-                                            <a href="index.html" class="nav-link">Home</a>
+                                            <a href="index.html" class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">Home</a>
                                         </li>
                                         <li class="list-group-item border-0">
-                                            <a href="Service.html" class="nav-link">Service</a>
+                                            <a href="Service.html" class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">Service</a>
                                         </li>
                                         <li class="list-group-item border-0">
-                                            <a href="Portfolio.html" class="nav-link">Portfolio</a>
+                                            <a href="About.html" class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">About</a>
                                         </li>
                                         <li class="list-group-item border-0">
-                                            <a href="Pricing.html" class="nav-link">Pricing</a>
+                                            <a href="Portfolio.html" class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">Portfolio</a>
                                         </li>
                                         <li class="list-group-item border-0">
-                                            <a href="#" class="nav-link">Blog</a>
+                                            <a href="Pricing.html" class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">Pricing</a>
+                                        </li>
+                                        <li class="list-group-item border-0">
+                                            <a href="Contact.html" class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">Contact</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                    
+                        <!-- Mobile Navbar End -->
                     </nav>
                 </header>
             </div>
         </div>
     </div>
 
+
+    <!-- Portfolio -->
     <div class="container-fluid" style=" background-color: #F2F4F6;">
         <div class="row">
             <div class="col-lg-12">
                 <div class=" d-flex justify-content-between align-content-center">
                     <h2 class="p-4 ms-5 mb-lg-0">Portfolio</h2>
                     <div class="align-content-center">
-                        <a class="text-decoration-none text-danger" href="">Home</a>/
-                        <a class="text-decoration-none text-black me-5" href="">Portfolio</a>
+                        <a class="text-decoration-none text-danger" href="index.html">Home</a>/
+                        <a class="text-decoration-none text-black me-5" href="Pricing.html">Pricing</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Portfolio End -->
 
-
+    <!-- Portfolio Heading -->
     <div class="container mt-5">
+        <!-- Heading -->
         <div class="row">
-            <div class="col-lg-12">
-
+            <div class="col-lg-12 text-center">
                 <div class="mt-5 mb-5">
-                    <h5>Portfolio</h5>
-                    <h3> Necessitatibus eius consequatur</h3>
-                </div>
-                <div>
-                    <ul class="d-flex gap-4 justify-content-center mb-4">
-                        <li class="btn btn-danger">ALL</li>
-                        <li class="btn btn-danger">APP</li>
-                        <li class="btn btn-danger">CARD</li>
-                        <li class="btn btn-danger">WEB</li>
-                    </ul>
+                    <h5 class="fs-1">Portfolio</h5>
+                    <p class="lead text-secondary">Explore a curated collection of creative works, crafted with passion
+                        and precision to bring unique ideas to life. Each design reflects a blend of innovation,
+                        functionality, and aesthetic appeal.</p>
                 </div>
             </div>
+        </div>
 
-            <div class="col-lg-4">
-                <img src="images/bottleimgjpg.jpg" alt="" width="100%">
-                <img src="images/table.jpg" alt="" class="mt-3" width="100%">
+        <!-- Masonry Grid -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4" data-masonry='{"percentPosition": true }'>
+
+            <!-- Image Items -->
+
+            <!-- 1st -->
+            <div class="col">
+                <img src="./images/Website_Design-1.avif" class="img-fluid portfolio-img" alt="">
             </div>
 
-            <div class="col-lg-4">
-                <img src="images/teajpg.jpg" alt="" width="100%">
-                <img src="images/lamp.jpg" alt="" class="mt-3" width="100%">
-                <img src="images/watch.jpg" alt="" class="mt-3" width="100%">
+            <!-- 2nd -->
+            <div class="col">
+                <img src="./images/Card-Image-4.avif" class="img-fluid portfolio-img" alt="">
             </div>
 
-            <div class="col-lg-4">
-                <img src="images/plantjpg.jpg" alt="" width="100%">
-                <img src="images/chasme.jpg" alt="" class="mt-3" width="100%">
-                <img src="images/camerajpg.jpg" alt="" class="mt-3" width="100%">
-                <img src="images/drink.jpg" alt="" class="mt-3" width="100%">
+            <!-- 3rd -->
+            <div class="col">
+                <img src="./images/Mobile-image-1.jpg" class="img-fluid portfolio-img" alt="">
+            </div>
+
+            <!-- 4th -->
+            <div class="col">
+                <img src="./images/Website-design-2.jpg" class="img-fluid portfolio-img" alt="">
+            </div>
+
+            <!-- 5th -->
+            <div class="col">
+                <img src="./images/Card-Image-2.avif" class="img-fluid portfolio-img" alt="">
+            </div>
+
+            <!-- 6th -->
+            <div class="col">
+                <img src="./images/Mobile-image-2.jpg" class="img-fluid portfolio-img" alt="">
+            </div>
+
+            <!-- 7th -->
+            <div class="col">
+                <img src="./images/Website-design-3.avif" class="img-fluid portfolio-img" alt="">
+            </div>
+
+            <!-- 8th -->
+            <div class="col">
+                <img src="./images/Card-Image-3.avif" class="img-fluid portfolio-img" alt="">
+            </div>
+
+            <!-- 9th -->
+            <div class="col">
+                <img src="./images/Mobile-Image-3.jpg" class="img-fluid portfolio-img" alt="">
+            </div>
+
+            <!-- 10th -->
+            <div class="col">
+                <img src="./images/Mobile-Image-4.jpg" class="img-fluid portfolio-img" alt="">
+            </div>
+
+            <!-- 11th -->
+            <div class="col">
+                <img src="./images/Ux-Ui-1.avif" class="img-fluid portfolio-img" alt="">
+            </div>
+
+            <!-- 12th -->
+            <div class="col">
+                <img src="./images/Ux-Ui-2.avif" class="img-fluid portfolio-img" alt="">
+            </div>
+
+            <!-- 13th -->
+            <div class="col">
+                <img src="./images/E-commerce-1.avif" class="img-fluid portfolio-img" alt="">
+            </div>
+
+            <!-- 14th -->
+            <div class="col">
+                <img src="./images/Mobile-Image-6.jpg" class="img-fluid portfolio-img" alt="">
+            </div>
+
+            <!-- 15th -->
+            <div class="col">
+                <img src="./images/E-commerce-2.avif" class="img-fluid portfolio-img" alt="">
+            </div>
+
+            <!-- 16th -->
+            <div class="col">
+                <img src="./images/E-commerce-3.avif" class="img-fluid portfolio-img" alt="">
+            </div>
+
+            <!-- 17th -->
+            <div class="col">
+                <img src="./images/Website-Design-5.avif" class="img-fluid portfolio-img" alt="">
+            </div>
+
+            <!-- 18th -->
+            <div class="col">
+                <img src="./images/Mobile-Image-5.jpg" class="img-fluid portfolio-img" alt="">
+            </div>
+
+            <!-- 19th -->
+            <div class="col">
+                <img src="./images/Card-Image-6.avif" class="img-fluid portfolio-img" alt="">
+            </div>
+
+            <!-- 20th -->
+            <div class="col">
+                <img src="./images/Website-Design-6.avif" class="img-fluid portfolio-img" alt="">
+            </div>
+
+            <div class="col">
+                <img src="./images/Card-Image-1.avif" class="img-fluid portfolio-img" alt="">
             </div>
         </div>
     </div>
 
-    <div class="container-fluid bg-secondary text-white mt-5">
-        <div class="row">
-            <div class="col-lg-12">
 
-                <div class="row">
-                    <div class="col-lg-4 pt-5 ps-5">
-                        <h4>Sailor</h4>
-                        <p>A108 Adam Street
-                            New York, NY 535022</p>
-                        <span class="fw-bold">Phone:</span> +1 5589 55488 55 <br>
-                        <span class="fw-bold">Email:</span> Info@example.com <br> <br>
-                        <i class="fa-brands fa-square-x-twitter fs-4"></i>
-                        <i class="fa-brands fa-facebook fs-4"></i>
-                        <i class="fa-brands fa-instagram fs-4"></i>
-                        <i class="fa-brands fa-linkedin fs-4"></i>
-                    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid custom-gradient text-white mt-5">
+            <div class="row">
+                <div class="col-lg-12">
 
-                    <div class="col-lg-2 p-5">
-                        <h5>UseFul Links</h5>
-                        <ul class="list-unstyled lh-lg">
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Service</li>
-                            <li>Terms & services</li>
-                            <li>Privacy Policy</li>
-                        </ul>
-                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 p-lg-3 mt-4 text-center text-lg-start">
+                            <a class="text-decoration-none" href="index.html">
+                                <h4 class="fs-3 text-white">Agenci</h4>
+                            </a>
+                            <p>A108 Adam Street
+                                New York, NY 535022</p>
+                            <span class="fw-bold">Phone:</span> +1 5589 55488 55 <br>
+                            <span class="fw-bold">Email:</span> Info@example.com <br> <br>
+                            <div>
+                                <a class="text-decoration-none px-2 text-white" href="https://x.com/">
+                                    <i class="fa-brands fa-square-x-twitter fs-4 "></i>
+                                </a>
 
-                    <div class="col-lg-2 p-5">
-                        <h5>Our Services</h5>
-                        <ul class="list-unstyled lh-lg">
-                            <li>Web Design</li>
-                            <li>Web Development</li>
-                            <li>Product Management</li>
-                            <li>Marketing</li>
-                            <li>Graphic Design</li>
-                        </ul>
-                    </div>
+                                <a class="text-decoration-none px-2" href="https://www.facebook.com/">
+                                    <i class="fa-brands fa-facebook fs-4  text-white"></i>
+                                </a>
 
-                    <div class="col-lg-4 p-5">
-                        <h5>Our Newsletter</h5>
-                        <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+                                <a class="text-decoration-none px-2" href="https://www.instagram.com/">
+                                    <i class="fa-brands fa-instagram fs-4  text-white"></i>
+                                </a>
 
-                        <div class="input-group">
-                            <input type="text" class="form-control">
-                            <button class="input-group-text btn btn-primary">Subscribe</button>
+                                <a class="text-decoration-none px-2" href="https://www.linkedin.com/">
+                                    <i class="fa-brands fa-linkedin fs-4  text-white"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-3 p-lg-3 mt-4 text-center text-lg-start">
+                            <h5 class="fs-4">UseFul Links</h5>
+                            <ul class="list-unstyled lh-lg ">
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none  fs-5" href="About.html">About</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none  fs-5" href="Service.html">Services</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none  fs-5" href="Portfolio.html">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Pricing.html">Pricing</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 p-lg-3 mt-4 text-center text-lg-start">
+                            <h5 class="fs-4">Our Services</h5>
+                            <ul class="list-unstyled lh-lg">
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Service.html">Web Design</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Service.html">Web
+                                        Development</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Service.html">Product
+                                        Management</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Service.html">Marketing</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Service.html">Graphic
+                                        Design</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 p-lg-3 mt-4 text-center text-lg-start">
+                            <h5 class="fs-4">Our Newsletter</h5>
+                            <p>Subscribe to our newsletter and receive the latest news about our products and services!
+                            </p>
+
+                            <div class="input-group">
+                                <input type="text" class="form-control">
+                                <button class="input-group-text btn btn-danger">Subscribe</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
+
+    <!-- footer End -->
+
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>

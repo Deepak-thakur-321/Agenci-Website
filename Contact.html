@@ -14,14 +14,22 @@
 </head>
 
 <body>
-    <div class="container-fluid bg-secondary">
+    <div class="container-fluid bg-secondary customNav">
         <div class="row">
             <div class="col-lg-12">
                 <header>
-                    <nav class="navbar navbar-expand-lg bg-secondary">
-                        <a href="" class="navbar-brand fs-3 ms-5 text-white">SAILOR</a>
+                    <!-- Desktop Navbar Start -->
+                    <nav class="navbar navbar-expand-lg bg-secondary customNavbar">
+                        <a href="index.html" class="navbar-brand fs-3 ms-5 text-white d-flex align-items-center gap-1">
+                            <span
+                                class="fs-1 fw-bold d-inline-block text-dark bg-white border border-white rounded-circle text-center"
+                                style="width: 45px; height: 45px; line-height: 43px;">
+                                A
+                            </span>
+                            <span class="fw-light" style="letter-spacing: 2px;">genci</span>
+                        </a>
 
-                        <button class="navbar-toggler" data-bs-toggle="modal" data-bs-target="#nav1">
+                        <button class="navbar-toggler bg-white" data-bs-toggle="modal" data-bs-target="#nav1">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
@@ -43,167 +51,237 @@
                                     <a href="Pricing.html" class="nav-link text-white">Pricing</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="" class="nav-link text-white">Blog</a>
-                                </li>
-                                <li class="nav-item">
                                     <a href="Contact.html" class="nav-link text-white">Contact</a>
                                 </li>
                                 <li class="nav-item align-content-center">
-                                    <button class="btn btn-primary">Get Started</button>
+                                    <a href="Contact.html">
+                                        <button class="btn btn-danger">Get Started</button>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
-                           
+                        <!-- Desktop Navbar End -->
+
+                        <!-- MObile Navbar Start -->
                         <div class="modal fade" id="nav1">
                             <div class="modal-dialog">
                                 <div class="modal-content p-2">
                                     <button class="btn-close ms-auto" data-bs-dismiss="modal"></button>
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item border-0">
-                                            <a href="index.html" class="nav-link">Home</a>
+                                            <a href="index.html"
+                                                class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">Home</a>
                                         </li>
                                         <li class="list-group-item border-0">
-                                            <a href="Service.html" class="nav-link">Service</a>
+                                            <a href="Service.html"
+                                                class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">Service</a>
                                         </li>
                                         <li class="list-group-item border-0">
-                                            <a href="Portfolio.html" class="nav-link">Portfolio</a>
+                                            <a href="About.html"
+                                                class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">About</a>
                                         </li>
                                         <li class="list-group-item border-0">
-                                            <a href="Pricing.html" class="nav-link">Pricing</a>
+                                            <a href="Portfolio.html"
+                                                class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">Portfolio</a>
                                         </li>
                                         <li class="list-group-item border-0">
-                                            <a href="#" class="nav-link">Blog</a>
+                                            <a href="Pricing.html"
+                                                class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">Pricing</a>
+                                        </li>
+                                        <li class="list-group-item border-0">
+                                            <a href="Contact.html"
+                                                class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">Contact</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                    
+                        <!-- Mobile Navbar End -->
                     </nav>
                 </header>
             </div>
         </div>
     </div>
 
+    <!-- Contact -->
     <div class="container-fluid" style=" background-color: #F2F4F6;">
         <div class="row">
             <div class="col-lg-12">
                 <div class=" d-flex justify-content-between align-content-center">
                     <h2 class="p-4 ms-5 mb-lg-0">Contact</h2>
                     <div class="align-content-center">
-                        <a class="text-decoration-none text-danger" href="">Home</a>/
-                        <a class="text-decoration-none text-black me-5" href="">Contact</a>
+                        <a class="text-decoration-none text-danger" href="index.html">Home</a>/
+                        <a class="text-decoration-none text-black me-5" href="Contact.html">Contact</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Contact End -->
 
+    <!-- Form Section -->
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
+
+                <div class="row justify-content-center align-items-center mt-5">
+                    <div class="col-lg-8 text-center mb-4">
+                        <h2 class="fw-bold mb-3">Get in Touch</h2>
+                        <p class="text-muted">We'd love to hear from you! Reach out to us for inquiries, collaborations,
+                            or just a friendly hello.</p>
+                    </div>
+                </div>
+
                 <div class="row">
-                    <div class="col-lg-4 mt-5">
-                        <div>
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <div>
-                            <h4>Address</h4>
-                            <p>A108 Adam Street, New York, NY 535022</p>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                        <div>
-                            <h4>Call Us</h4>
-                            <p>+123456789</p>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h4>Email-Us</h4>
-                            <p>info@example.com</p>
+                    <!-- Address Area -->
+                    <div class="col-lg-5 mb-4">
+                        <div class="contact-info p-4 shadow rounded-3 bg-white">
+                            <h5 class="fw-bold mb-3">Contact Information</h5>
+                            <p><i class="fas fa-map-marker-alt me-2 text-danger"></i>123 Main Street, New Delhi, India
+                            </p>
+                            <p><i class="fas fa-envelope me-2 text-danger"></i>info@yourcompany.com</p>
+                            <p><i class="fas fa-phone-alt me-2 text-danger"></i>+91 8888897777</p>
+                            <p><i class="fas fa-clock me-2 text-danger"></i>Mon - Fri: 9 AM - 6 PM</p>
+
+                            <div class="social-icons mt-4">
+                                <a href="https://facebook.com/" class="me-3"><i
+                                        class="fab fa-facebook-f text-danger"></i></a>
+                                <a href="https://www.linkedin.com/" class="me-3"><i
+                                        class="fab fa-linkedin-in text-danger"></i></a>
+                                <a href="https://x.com/" class="me-3"><i class="fab fa-twitter text-danger"></i></a>
+                                <a href="https://www.instagram.com/"><i class="fab fa-instagram text-danger"></i></a>
+                            </div>
                         </div>
                     </div>
-                            
-                    <div class="col-lg-8 mt-5">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <input type="text" placeholder="Enter Your Name" class="form-control">
-                            </div>
-                            <div class="col-lg-6">
-                                <input type="email" placeholder="Enter Your Email" class="form-control">
-                            </div>
-                            <div class="col-lg-12 mt-3">
-                                <input type="text" placeholder="Subject" class="form-control">
-                            </div>
-                            <div class="col-lg-12 mt-3">
-                                <textarea name="" rows="8" id="" class="form-control">Message</textarea>
-                            </div>
-                            <div class="text-center mt-3">
-                              <button class="btn btn-danger">Send Message</button>
-                            </div>
+
+                    <!-- Form Area -->
+                    <div class="col-lg-7">
+                        <div class="p-4 shadow rounded-3 bg-white">
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Subject" required>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="5" placeholder="Your Message"
+                                        required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-danger w-100 py-2">Send Message</button>
+                            </form>
                         </div>
                     </div>
                 </div>
-               
+
             </div>
         </div>
     </div>
 
-    <div class="container-fluid bg-secondary text-white mt-5">
-        <div class="row">
-            <div class="col-lg-12">
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid custom-gradient text-white mt-5">
+            <div class="row">
+                <div class="col-lg-12">
 
-                <div class="row">
-                    <div class="col-lg-4 pt-5 ps-5">
-                        <h4>Sailor</h4>
-                        <p>A108 Adam Street
-                            New York, NY 535022</p>
-                        <span class="fw-bold">Phone:</span> +1 5589 55488 55 <br>
-                        <span class="fw-bold">Email:</span> Info@example.com <br> <br>
-                        <i class="fa-brands fa-square-x-twitter fs-4"></i>
-                        <i class="fa-brands fa-facebook fs-4"></i>
-                        <i class="fa-brands fa-instagram fs-4"></i>
-                        <i class="fa-brands fa-linkedin fs-4"></i>
-                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 p-lg-3 mt-4 text-center text-lg-start">
+                            <a class="text-decoration-none" href="index.html">
+                                <h4 class="fs-3 text-white">Agenci</h4>
+                            </a>
+                            <p>A108 Adam Street
+                                New York, NY 535022</p>
+                            <span class="fw-bold">Phone:</span> +1 5589 55488 55 <br>
+                            <span class="fw-bold">Email:</span> Info@example.com <br> <br>
+                            <div>
+                                <a class="text-decoration-none px-2 text-white" href="https://x.com/">
+                                    <i class="fa-brands fa-square-x-twitter fs-4 "></i>
+                                </a>
 
-                    <div class="col-lg-2 p-5">
-                        <h5>UseFul Links</h5>
-                        <ul class="list-unstyled lh-lg">
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Service</li>
-                            <li>Terms & services</li>
-                            <li>Privacy Policy</li>
-                        </ul>
-                    </div>
+                                <a class="text-decoration-none px-2" href="https://www.facebook.com/">
+                                    <i class="fa-brands fa-facebook fs-4  text-white"></i>
+                                </a>
 
-                    <div class="col-lg-2 p-5">
-                        <h5>Our Services</h5>
-                        <ul class="list-unstyled lh-lg">
-                            <li>Web Design</li>
-                            <li>Web Development</li>
-                            <li>Product Management</li>
-                            <li>Marketing</li>
-                            <li>Graphic Design</li>
-                        </ul>
-                    </div>
+                                <a class="text-decoration-none px-2" href="https://www.instagram.com/">
+                                    <i class="fa-brands fa-instagram fs-4  text-white"></i>
+                                </a>
 
-                    <div class="col-lg-4 p-5">
-                        <h5>Our Newsletter</h5>
-                        <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+                                <a class="text-decoration-none px-2" href="https://www.linkedin.com/">
+                                    <i class="fa-brands fa-linkedin fs-4  text-white"></i>
+                                </a>
+                            </div>
 
-                        <div class="input-group">
-                            <input type="text" class="form-control">
-                            <button class="input-group-text btn btn-primary">Subscribe</button>
+                        </div>
+
+                        <div class="col-lg-3 p-lg-3 mt-4 text-center text-lg-start">
+                            <h5 class="fs-4">UseFul Links</h5>
+                            <ul class="list-unstyled lh-lg ">
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none  fs-5" href="About.html">About</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none  fs-5" href="Service.html">Services</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none  fs-5" href="Portfolio.html">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Pricing.html">Pricing</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 p-lg-3 mt-4 text-center text-lg-start">
+                            <h5 class="fs-4">Our Services</h5>
+                            <ul class="list-unstyled lh-lg">
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Service.html">Web Design</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Service.html">Web
+                                        Development</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Service.html">Product
+                                        Management</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Service.html">Marketing</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Service.html">Graphic
+                                        Design</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 p-lg-3 mt-4 text-center text-lg-start">
+                            <h5 class="fs-4">Our Newsletter</h5>
+                            <p>Subscribe to our newsletter and receive the latest news about our products and services!
+                            </p>
+
+                            <div class="input-group">
+                                <input type="text" class="form-control">
+                                <button class="input-group-text btn btn-danger">Subscribe</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
+
+    <!-- footer End -->
+
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>

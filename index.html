@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dream Build</title>
+    <title>Sailor website</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
@@ -14,17 +14,27 @@
 </head>
 
 <body>
-
-    <div class="container-fluid bg-secondary">
+    <!-- Desktop Navbar -->
+    <div class="container-fluid bg-secondary customNav ">
         <div class="row">
             <div class="col-lg-12">
                 <header>
-                    <nav class="navbar navbar-expand-lg bg-secondary">
-                        <a href="" class="navbar-brand fs-3 ms-5 text-white">SAILOR</a>
+                    <nav class="navbar navbar-expand-lg bg-secondary customNavbar ">
+                        <a href="index.html" class="navbar-brand fs-3 ms-5 text-white d-flex align-items-center gap-1">
+                            <span
+                                class="fs-1 fw-bold d-inline-block text-dark bg-white border border-white rounded-circle text-center"
+                                style="width: 45px; height: 45px; line-height: 43px;">
+                                A
+                            </span>
+                            <span class="fw-light" style="letter-spacing: 2px;">genci</span>
+                        </a>
 
-                        <button class="navbar-toggler" data-bs-toggle="modal" data-bs-target="#nav1">
-                            <span class="navbar-toggler-icon"></span>
+                        <!-- Toggle/menu Icon -->
+                        <button class="navbar-toggler bg-white" data-bs-toggle="modal" data-bs-target="#nav1">
+                            <span class="navbar-toggler-icon "></span>
                         </button>
+
+                        <!-- Desktop Navbar -->
 
                         <div class="d-lg-block d-none ms-auto">
                             <ul class="nav navbar-nav gap-5 fs-5 me-5 text-white ms-auto">
@@ -44,417 +54,524 @@
                                     <a href="Pricing.html" class="nav-link text-white">Pricing</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="" class="nav-link text-white">Blog</a>
-                                </li>
-                                <li class="nav-item">
                                     <a href="Contact.html" class="nav-link text-white">Contact</a>
                                 </li>
                                 <li class="nav-item align-content-center">
-                                    <button class="btn btn-primary">Get Started</button>
+                                    <a href="Contact.html" class="text-decoration-none text-white">
+                                        <button class="btn text-white btn-danger">Get Started</button>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
-                           
+
+                        <!-- Mobile Navbar -->
                         <div class="modal fade" id="nav1">
                             <div class="modal-dialog">
                                 <div class="modal-content p-2">
                                     <button class="btn-close ms-auto" data-bs-dismiss="modal"></button>
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item border-0">
-                                            <a href="index.html" class="nav-link">Home</a>
+                                            <a href="index.html"
+                                                class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">Home</a>
                                         </li>
                                         <li class="list-group-item border-0">
-                                            <a href="Service.html" class="nav-link">Service</a>
+                                            <a href="Service.html"
+                                                class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">Service</a>
                                         </li>
                                         <li class="list-group-item border-0">
-                                            <a href="Portfolio.html" class="nav-link">Portfolio</a>
+                                            <a href="About.html"
+                                                class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">About</a>
                                         </li>
                                         <li class="list-group-item border-0">
-                                            <a href="Pricing.html" class="nav-link">Pricing</a>
+                                            <a href="Portfolio.html"
+                                                class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">Portfolio</a>
                                         </li>
                                         <li class="list-group-item border-0">
-                                            <a href="#" class="nav-link">Blog</a>
+                                            <a href="Pricing.html"
+                                                class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">Pricing</a>
+                                        </li>
+                                        <li class="list-group-item border-0">
+                                            <a href="Contact.html"
+                                                class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">Contact</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                    
+                        <!-- Mobile Navbar End -->
                     </nav>
                 </header>
             </div>
         </div>
     </div>
+    <!-- Desktop Navbar End -->
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12 px-0">
-                <main class="main">
-                    <div class="carousel slide  mx-0" data-bs-ride="carousel" id="abc">
-                      
-                        <div class="carousel-inner position-relative">
-                            <div class="carousel-item active top-carousel img-outer" data-bs-interval="3000">
-                                <img src="images/microsoftimage.jpg" class="w-100" alt="">
-                                <div class="carousel-caption  cap">
-                                    <div class="">
-                                        <h1>Welcome To Sailor</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat.</p>
-                                        <button class="btn btn-danger  mt-2">Get Started</button>
+
+    <main>
+        <!-- Carousel Area -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 px-0">
+                    <main class="main">
+                        <div class="carousel slide  mx-0" data-bs-ride="carousel" id="abc">
+
+                            <!-- 1st -->
+                            <div class="carousel-inner position-relative">
+                                <div class="carousel-item active top-carousel img-outer" data-bs-interval="3000">
+                                    <img class="carousel-image-1" src="./images/microsoftimage.jpg" alt="">
+                                    <div
+                                        class="carousel-caption d-flex align-items-center justify-content-center h-100">
+                                        <div class="carousel-content">
+                                            <h1>Welcome To Agenci</h1>
+                                            <p class="fs-4">We are a creative agency helping businesses grow with
+                                                stunning websites, branding, and digital marketing strategies.</p>
+                                            <a href="Contact.html">
+                                                <button class="btn btn-danger btn-lg  mt-2">Get Started</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 2nd -->
+                                <div class="carousel-item img-outer" data-bs-interval="3000">
+                                    <img class="carousel-image-2 " src="./images/carousel-image-2.jpg" alt="">
+                                    <div
+                                        class="carousel-caption d-flex align-items-center justify-content-center h-100">
+                                        <div class="">
+                                            <h2 class="fs-1">Transforming Ideas into Reality</h2>
+                                            <p class="fs-5 ">We bring your vision to life with creative and
+                                                innovative solutions. Let's work together to create something
+                                                extraordinary and impactful for your brand. </p>
+                                            <a href="Contact.html">
+                                                <button class="btn btn-danger btn-lg mt-2">Get Started</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- 3rd -->
+                                <div class="carousel-item img-outer" data-bs-interval="3000">
+                                    <img class="carousel-image-3" src="./images/carousel-image-3.jpg" alt="">
+                                    <div
+                                        class=" carousel-caption d-flex align-items-center justify-content-center h-100">
+                                        <div class="carousel-content-3 mt-lg-0">
+                                            <h2 class="fs-1">Crafting Unique Digital Experiences</h2>
+                                            <p class="fs-4 lead">From design to development, we deliver tailored
+                                                solutions that help your business stand out in the digital world. </p>
+                                            <a href="Contact.html">
+                                                <button class="btn btn-danger btn-lg mt-2">Get Started</button>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="carousel-item img-outer" data-bs-interval="3000">
-                                <img src="images/secondimage.jpg" class="w-100" alt="">
-                                <div class="carousel-caption  cap">
-                                    <div>
-                                        <h2>At vero eos et accusamus</h2>
-                                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
-                                            quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda
-                                            est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis
-                                            debitis aut.</p>
-                                        <button class="btn btn-danger  mt-2">Get Started</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item img-outer" data-bs-interval="3000">
-                                <img src="images/ThirdImage.jpg" class="w-100" alt="">
-                                <div class="carousel-caption   cap ">
-                                    <h2>Temporibus autem quibusdam</h2>
-                                    <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-                                        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
-                                        ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem
-                                        accusantium.</p>
-                                    <button class="btn btn-danger  mt-2">Get Started</button>
-                                </div>
-
-                            </div>
+                            <!-- Buttons -->
+                            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#abc">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#abc">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
                         </div>
-
-                        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#abc">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#abc">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
-                    </div>
-                </main>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <h2 class="text-decoration-underline mt-5">ABOUT US</h2>
-
-            <div class="col-lg-6">
-                <div class="about">
-
-                    <div class="About-Content mt-4">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut
-                            labore et dolore magna aliqua.</p>
-
-                        <ul style="margin-left: -33px; list-style-type: none;">
-                            <li>
-                                <i class="fa-regular fa-circle-check text-danger"></i>
-                                Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-circle-check text-danger"></i>
-                                Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-circle-check text-danger"></i>
-                                Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-                            </li>
-                        </ul>
-                    </div>
-
+                    </main>
                 </div>
-
-            </div>
-            <div class="col-lg-6 mt-4 mb-5">
-                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                    sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                    laborum.</p>
-
-                <button class="btn btn-danger">Read More <i
-                        class="fa-solid fa-arrow-right align-content-center"></i></button>
-
             </div>
         </div>
-    </div>
+        <!-- Carousel Area End -->
 
-    <div class="container-fluid  " style="background-color: #F2F4F6;">
+
+        <!-- About Section -->
+
         <div class="container">
-            <div class="row mt-5 mb-5 align-items-center py-4">
+            <div class="row">
+                <h2 class="mt-5 fs-1 text-danger">ABOUT US</h2>
 
-                <style>
-                    .img1:hover {
-                        opacity: 1;
-                        cursor: pointer;
-                        color:blue
-                        /* background: #000; */
-                    }
-                </style>
+                <div class="col-lg-6">
+                    <div class="about">
 
-                <div class="col-lg-2">
-                    <img class="img1" src="images/logo1.png" alt="" width="60%"
-                        style="filter: grayscale(100); opacity: 0.5" ;>
+                        <div class="About-Content mt-4 fs-5">
+                            <div class="left-about">
+                                <p style="text-align: justify;">
+                                    We are a team of creative thinkers and passionate developers focused on building
+                                    brands that leave a lasting impression.
+                                    Our mission is to turn ideas into reality through innovative design and seamless
+                                    development.
+                                    With a deep understanding of modern technologies, we ensure every project is crafted
+                                    with precision and care.
+                                    From initial strategy to final launch, we work closely with our clients to deliver
+                                    outstanding digital experiences that drive success.
+                                    Whether it's a startup or an established business, we help you grow and stand out in
+                                    the competitive market.
+                                </p>
+
+                                <ul style="text-align: justify; padding-left: 0px;; list-style-type: none;">
+                                    <li>
+                                        <i class="fa-regular fa-circle-check text-danger"></i>
+                                        Custom Website & App Development
+
+                                    </li>
+                                    <li>
+                                        <i class="fa-regular fa-circle-check text-danger"></i>
+                                        User-Centered UX/UI Design
+
+                                    </li>
+                                    <li>
+                                        <i class="fa-regular fa-circle-check text-danger"></i>
+                                        SEO Optimized and Fast Loading Websites
+
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-regular fa-circle-check text-danger"></i>
+                                        Ongoing Support & Maintenance
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-lg-2">
-                    <img src="images/logo2.png" alt="" width="60%" style="filter: grayscale(100); opacity: 0.5;">
-                </div>
+                <div class="col-lg-6 mt-4 mb-5 fs-5">
+                    <p>At Sailor Agency, we focus on crafting visually stunning and highly functional websites that
+                        truly represent your brand.
+                        Our team blends creativity with technology to deliver solutions that engage and convert your
+                        audience.
+                        From startups to established businesses, we help you grow your digital presence with
+                        tailored strategies.
+                        Let's build something amazing together that drives real results for your business.</p>
 
-                <div class="col-lg-2">
-                    <img src="images/logo3.png" alt="" width="60%" style="filter: grayscale(100); opacity: 0.5;">
-                </div>
-
-                <div class="col-lg-2">
-                    <img src="images/logo4.png" alt="" width="60%" style="filter: grayscale(100); opacity: 0.5;">
-                </div>
-
-                <div class="col-lg-2">
-                    <img src="images/logo5.png" alt="" width="60%" style="filter: grayscale(100); opacity: 0.5;">
-                </div>
-
-                <div class="col-lg-2">
-                    <img src="images/logo6.png" alt="" width="60%" style="filter: grayscale(100); opacity: 0.5;">
+                    <a href="About.html">
+                        <button class="btn btn-danger">Read More <i
+                                class="fa-solid fa-arrow-right align-content-center"></i></button>
+                    </a>
                 </div>
             </div>
         </div>
-    </div>
+        <!-- About section End -->
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 ">
-                <div class="border border-2 p-3">
-                    <div class="row">
-                        <div class="col-lg-1">
-                            <i class="fa-solid fa-briefcase text-danger fs-3"></i>
-                        </div>
+        <!-- Icons Area Start -->
 
-                        <div class="col-lg-10">
-                            <h3>Lorem Ipsum.</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, aspernatur itaque facilis
-                                nulla
-                                aliquid quam enim doloremque non quidem quo?</p>
-                        </div>
+        <div class="container-fluid py-5" style="background-color: #F2F4F6;">
+            <div class="container">
+                <div class="row justify-content-center align-items-center g-4">
+                    <!-- Logo 1 -->
+                    <div class="col-4 col-md-2 d-flex justify-content-center align-items-center">
+                        <img src="images/logo1.png" alt="Brand Logo 1" class="brand-logo">
                     </div>
-                </div>
-            </div>
 
-            <div class="col-lg-6 ">
-                <div class="border border-2 p-3">
-                    <div class="row">
-                        <div class="col-lg-1">
-                            <i class="fa-solid fa-briefcase  text-danger fs-3"></i>
-                        </div>
-
-                        <div class="col-lg-10">
-                            <h3>Sed ut perspiciats</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, aspernatur itaque facilis
-                                nulla
-                                aliquid quam enim doloremque non quidem quo?</p>
-                        </div>
+                    <!-- Logo 2 -->
+                    <div class="col-4 col-md-2 d-flex justify-content-center align-items-center">
+                        <img src="images/logo2.png" alt="Brand Logo 2" class="brand-logo">
                     </div>
-                </div>
-            </div>
 
-            <div class="col-lg-6 ">
-                <div class="border border-2 p-3 mt-3">
-                    <div class="row">
-                        <div class="col-lg-1">
-                            <i class="fa-solid fa-briefcase  text-danger fs-3"></i>
-                        </div>
-                        <div class="col-lg-10">
-                            <h3>Nemo Enim</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, aspernatur itaque facilis
-                                nulla
-                                aliquid quam enim doloremque non quidem quo?</p>
-                        </div>
+                    <!-- Logo 3 -->
+                    <div class="col-4 col-md-2 d-flex justify-content-center align-items-center">
+                        <img src="images/logo3.png" alt="Brand Logo 3" class="brand-logo">
                     </div>
-                </div>
-            </div>
 
-            <div class="col-lg-6 ">
-                <div class="border border-2 p-3 mt-3">
-                    <div class="row">
-                        <div class="col-lg-1">
-                            <i class="fa-solid fa-briefcase  text-danger fs-3"></i>
-                        </div>
-                        <div class="col-lg-10">
-                            <h3>Dolor Sitema</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, aspernatur itaque facilis
-                                nulla
-                                aliquid quam enim doloremque non quidem quo?</p>
-                        </div>
+                    <!-- Logo 4 -->
+                    <div class="col-4 col-md-2 d-flex justify-content-center align-items-center">
+                        <img src="images/logo4.png" alt="Brand Logo 4" class="brand-logo">
                     </div>
-                </div>
-            </div>
 
-            <div class="col-lg-6 ">
-                <div class="border border-2 p-3 mt-3">
-                    <div class="row">
-                        <div class="col-lg-1">
-                            <i class="fa-solid fa-briefcase  text-danger fs-3"></i>
-                        </div>
-                        <div class="col-lg-10">
-                            <h3>Magni Dolores</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, aspernatur itaque facilis
-                                nulla
-                                aliquid quam enim doloremque non quidem quo?</p>
-                        </div>
+                    <!-- Logo 5 -->
+                    <div class="col-4 col-md-2 d-flex justify-content-center align-items-center">
+                        <img src="images/logo5.png" alt="Brand Logo 5" class="brand-logo">
                     </div>
-                </div>
-            </div>
 
-            <div class="col-lg-6 ">
-                <div class="border border-2 p-3 mt-3">
-                    <div class="row">
-                        <div class="col-lg-1">
-                            <i class="fa-solid fa-briefcase  text-danger fs-3"></i>
-                        </div>
-
-                        <div class="col-lg-10">
-                            <h3>Eiusmod Tempor</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, aspernatur itaque facilis
-                                nulla
-                                aliquid quam enim doloremque non quidem quo?</p>
-                        </div>
+                    <!-- Logo 6 -->
+                    <div class="col-4 col-md-2 d-flex justify-content-center align-items-center">
+                        <img src="images/logo6.png" alt="Brand Logo 6" class="brand-logo">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-lg-12">
+        <!-- Icons section end -->
 
-                <div class="mt-5 mb-5">
-                    <h5>Portfolio</h5>
-                    <h3> Necessitatibus eius consequatur</h3>
+
+        <!-- Cards Section Start -->
+
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <div class="border text-white rounded p-3 mt-3 custom-gradient">
+                        <div class="row">
+                            <div class="col-lg-1">
+                                <i class="fas fa-tools fs-3 p-1"></i>
+                            </div>
+
+                            <div class="col-lg-10">
+                                <h3>Business Automation</h3>
+                                <p>We help businesses automate their daily repetitive tasks using advanced technology
+                                    and AI-driven tools. Whether it's managing workflows, client communications, or
+                                    inventory systems, our solutions reduce manual work and improve efficiency. Focus on
+                                    growing your business while we handle the operations in the background. </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-             
-                    <div class="text-center">
-                          <ul class="list-inline-4">
-                        <li class=" list-inline-item btn btn-danger">ALL</li>
-                        <li class=" list-inline-item btn btn-danger">APP</li>
-                        <li class=" list-inline-item btn btn-danger">CARD</li>
-                        <li class=" list-inline-item btn btn-danger">WEB</li>
-                    </ul>
+
+                <div class="col-lg-6">
+                    <div class="border text-white rounded p-3 mt-3 custom-gradient">
+                        <div class="row">
+                            <div class="col-lg-1">
+                                <i class="fas fa-puzzle-piece fs-3 p-1"></i>
+                            </div>
+
+                            <div class="col-lg-10">
+                                <h3>Product Design & Prototyping</h3>
+                                <p>Bring your product ideas to life with our creative design and prototyping services.
+                                    We create stunning, user-friendly, and fully functional prototypes that help you
+                                    visualize the final product before development. Our team focuses on creating
+                                    intuitive user flows and attractive interfaces that solve real problems.
+
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                  
-               
-            </div>
+                </div>
 
-            <div class="col-lg-4">
-                <img src="images/bottleimgjpg.jpg" alt="" width="100%">
-                <img src="images/table.jpg" alt="" class="mt-3" width="100%">
-            </div>
-
-            <div class="col-lg-4">
-                <img src="images/teajpg.jpg" alt="" width="100%">
-                <img src="images/lamp.jpg" alt="" class="mt-3" width="100%">
-                <img src="images/watch.jpg" alt="" class="mt-3" width="100%">
-            </div>
-
-            <div class="col-lg-4">
-                <img src="images/plantjpg.jpg" alt="" width="100%">
-                <img src="images/chasme.jpg" alt="" class="mt-3" width="100%">
-                <img src="images/camerajpg.jpg" alt="" class="mt-3" width="100%">
-                <img src="images/drink.jpg" alt="" class="mt-3" width="100%">
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container-fluid bg-secondary text-white mt-5">
-        <div class="row">
-            <div class="col-lg-12">
-
-                <div class="row">
-                    <div class="col-lg-4 pt-5 ps-5">
-                        <h4>Sailor</h4>
-                        <p>A108 Adam Street
-                            New York, NY 535022</p>
-                        <span class="fw-bold">Phone:</span> +1 5589 55488 55 <br>
-                        <span class="fw-bold">Email:</span> Info@example.com <br> <br>
-                        <i class="fa-brands fa-square-x-twitter fs-4"></i>
-                        <i class="fa-brands fa-facebook fs-4"></i>
-                        <i class="fa-brands fa-instagram fs-4"></i>
-                        <i class="fa-brands fa-linkedin fs-4"></i>
+                <div class="col-lg-6 ">
+                    <div class="border text-white rounded p-3 mt-3 custom-gradient">
+                        <div class="row">
+                            <div class="col-lg-1">
+                                <i class="fas fa-chart-line fs-3 p-1"></i>
+                            </div>
+                            <div class="col-lg-10">
+                                <h3>Market Research & Strategy</h3>
+                                <p>Make smarter business decisions with our expert market research and strategy
+                                    services. We analyze customer behavior, industry trends, and competitors to give you
+                                    a clear picture of where your business stands. Our team provides actionable insights
+                                    and strategies to help you capture new opportunities and avoid risks. </p>
+                            </div>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="col-lg-2 p-5">
-                        <h5>UseFul Links</h5>
-                        <ul class="list-unstyled lh-lg">
-                            <li><a href="index.html"></a>Home</li>
-                            <li><a href="About.html"></a>About</li>
-                            <li><a href="Service.html"></a>Service</li>
-                            <li><a href="index.html"></a>Terms & services</li>
-                            <li><a href="index.html"></a>Privacy Policy</li>
-                        </ul>
+                <div class="col-lg-6 ">
+                    <div class="border text-white rounded p-3 mt-3 custom-gradient">
+                        <div class="row">
+                            <div class="col-lg-1">
+                                <i class="fas fa-lightbulb fs-3 p-1"></i>
+                            </div>
+                            <div class="col-lg-10">
+                                <h3>Business Consultation</h3>
+                                <p>Get expert guidance and tailored solutions for your business challenges. Whether
+                                    you’re a startup or an established brand, we help identify gaps, improve operations,
+                                    and create growth strategies that actually work. Our consultants work closely with
+                                    you to understand your business model and unique needs. </p>
+                            </div>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="col-lg-2 p-5">
-                        <h5>Our Services</h5>
-                        <ul class="list-unstyled lh-lg">
-                            <li>Web Design</li>
-                            <li>Web Development</li>
-                            <li>Product Management</li>
-                            <li>Marketing</li>
-                            <li>Graphic Design</li>
-                        </ul>
+                <div class="col-lg-6 ">
+                    <div class="border text-white rounded p-3 mt-3 custom-gradient">
+                        <div class="row">
+                            <div class="col-lg-1">
+                                <i class="fas fa-cogs fs-3 p-1 "></i>
+                            </div>
+                            <div class="col-lg-10">
+                                <h3>Custom SaaS Solutions</h3>
+                                <p>Build powerful and scalable Software-as-a-Service (SaaS) platforms designed for your
+                                    business needs. We create cloud-based applications that are user-friendly, secure,
+                                    and high-performing. Whether it's a subscription-based service or a custom tool for
+                                    internal use, we develop solutions that grow with your business. </p>
+                            </div>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="col-lg-4 p-5">
-                        <h5>Our Newsletter</h5>
-                        <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+                <div class="col-lg-6 ">
+                    <div class="border text-white rounded p-3 mt-3 custom-gradient ">
+                        <div class="row ">
+                            <div class="col-lg-1">
+                                <i class="fas fa-chart-pie fs-3 p-1"></i>
+                            </div>
 
-                        <div class="input-group">
-                            <input type="text" class="form-control">
-                            <button class="input-group-text btn btn-primary">Subscribe</button>
+                            <div class="col-lg-10">
+                                <h3>Data Analytics & Insights</h3>
+                                <p>Turn raw data into meaningful business insights with our advanced analytics services.
+                                    We help you track key performance indicators (KPIs), customer behavior, and sales
+                                    trends to make informed decisions. Our team uses modern tools to collect, analyze,
+                                    and visualize data in easy-to-understand dashboards. </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
+        <!-- Cards section end -->
 
+        <!-- Gallery Section Start -->
 
+        <div class="container-fluid" style="margin-top: 80px;">
+            <div class="container">
+                <h2 class="fs-1 text-danger mb-5">Our Gallery</h2>
+            </div>
+            <div class="masonry-gallery">
+                <div>
+                    <img src="./images/Website_Design-1.avif" class="img-fluid mb-4" alt="">
 
+                    <img src="./images/Card-Image-1.avif" class="img-fluid rounded mb-4" alt="">
 
+                    <img src="./images/Mobile-image-1.jpg" class="img-fluid rounded mb-4" alt="">
 
+                    <img src="./images/Website-design-2.jpg" class="img-fluid rounded mb-4" alt="">
 
+                    <img src="./images/Card-Image-2.avif" class="img-fluid rounded mb-4" alt="">
 
+                    <img src="./images/Mobile-image-2.jpg" class="img-fluid rounded mb-4" alt="">
 
+                    <img src="./images/Website-design-3.avif" class="img-fluid rounded" alt="">
 
+                    <img src="./images/Card-Image-3.avif" class="img-fluid rounded" alt="">
 
+                    <img src="./images/Mobile-Image-3.jpg" class="img-fluid rounded" alt="">
 
+                    <img src="./images/Mobile-Image-4.jpg" class="img-fluid rounded" alt="">
 
+                    <img src="./images/Ux-Ui-1.avif" class="img-fluid rounded" alt="">
 
+                    <img src="./images/Ux-Ui-2.avif" class="img-fluid rounded" alt="">
 
+                    <img src="./images/E-commerce-1.avif" class="img-fluid rounded" alt="">
 
+                    <img src="./images/Mobile-Image-6.jpg" class="img-fluid rounded" alt="">
 
+                    <img src="./images/E-commerce-2.avif" class="img-fluid rounded" alt="">
 
+                    <img src="./images/E-commerce-3.avif" class="img-fluid rounded" alt="">
 
+                    <img src="./images/Website-Design-5.avif" class="img-fluid rounded" alt="">
 
+                    <img src="./images/Mobile-Image-5.jpg" class="img-fluid rounded" alt="">
+
+                    <img src="./images/Card-Image-6.avif" class="img-fluid rounded" alt="">
+
+                    <img src="./images/Website-Design-6.avif" class="img-fluid rounded" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery Section End -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid custom-gradient text-white mt-5">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="row">
+                        <div class="col-lg-3  mt-4 text-center text-lg-start">
+                            <a class="text-decoration-none" href="index.html">
+                                <h4 class="fs-3 text-white">Agenci</h4>
+                            </a>
+                            <p>A108 Adam Street
+                                New York, NY 535022</p>
+                            <span class="fw-bold">Phone:</span> +1 5589 55488 55 <br>
+                            <span class="fw-bold">Email:</span> Info@example.com <br> <br>
+                            <div>
+                                <a class="text-decoration-none px-2 text-white" href="https://x.com/">
+                                    <i class="fa-brands fa-square-x-twitter fs-4 "></i>
+                                </a>
+
+                                <a class="text-decoration-none px-2" href="https://www.facebook.com/">
+                                    <i class="fa-brands fa-facebook fs-4  text-white"></i>
+                                </a>
+
+                                <a class="text-decoration-none px-2" href="https://www.instagram.com/">
+                                    <i class="fa-brands fa-instagram fs-4  text-white"></i>
+                                </a>
+
+                                <a class="text-decoration-none px-2" href="https://www.linkedin.com/">
+                                    <i class="fa-brands fa-linkedin fs-4  text-white"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-3  mt-4 text-center text-lg-start">
+                            <h5 class="fs-4">UseFul Links</h5>
+                            <ul class="list-unstyled lh-lg ">
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none  fs-5" href="About.html">About</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none  fs-5" href="Service.html">Services</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none  fs-5" href="Portfolio.html">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Pricing.html">Pricing</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3  mt-4 text-center text-lg-start">
+                            <h5 class="fs-4">Our Services</h5>
+                            <ul class="list-unstyled lh-lg">
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Service.html">Web Design</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Service.html">Web
+                                        Development</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Service.html">Product
+                                        Management</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Service.html">Marketing</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Service.html">Graphic
+                                        Design</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 p-lg-3 mt-4 text-center text-lg-start">
+                            <h5 class="fs-4">Our Newsletter</h5>
+                            <p>Subscribe to our newsletter and receive the latest news about our products and services!
+                            </p>
+
+                            <div class="input-group">
+                                <input type="text" class="form-control">
+                                <button class="input-group-text btn btn-danger">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer End -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/index.js"></script>
-   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

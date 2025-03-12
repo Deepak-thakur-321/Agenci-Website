@@ -15,17 +15,27 @@
 
 <body>
 
-    <div class="container-fluid bg-secondary">
+    <!-- Navbar section -->
+    <div class="container-fluid custom-gradient customNav">
         <div class="row">
             <div class="col-lg-12">
                 <header>
-                    <nav class="navbar navbar-expand-lg bg-secondary">
-                        <a href="" class="navbar-brand fs-3 ms-5 text-white">SAILOR</a>
+                    <nav class="navbar navbar-expand-lg custom-gradient customNavbar">
+                        <a href="index.html" class="navbar-brand fs-3 ms-5 text-white d-flex align-items-center gap-1">
+                            <span
+                                class="fs-1 fw-bold d-inline-block text-dark bg-white border border-white rounded-circle text-center"
+                                style="width: 45px; height: 45px; line-height: 43px;">
+                                A
+                            </span>
+                            <span class="fw-light" style="letter-spacing: 2px;">genci</span>
+                        </a>
 
-                        <button class="navbar-toggler" data-bs-toggle="modal" data-bs-target="#nav1">
+                        <!-- Toggle/menu Icon -->
+                        <button class="navbar-toggler bg-white" data-bs-toggle="modal" data-bs-target="#nav1">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
+                        <!-- Desktop Navbar -->
                         <div class="d-lg-block d-none ms-auto">
                             <ul class="nav navbar-nav gap-5 fs-5 me-5 text-white ms-auto">
                                 <li class="nav-item">
@@ -44,438 +54,385 @@
                                     <a href="Pricing.html" class="nav-link text-white">Pricing</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="" class="nav-link text-white">Blog</a>
-                                </li>
-                                <li class="nav-item">
                                     <a href="Contact.html" class="nav-link text-white">Contact</a>
                                 </li>
                                 <li class="nav-item align-content-center">
-                                    <button class="btn btn-primary">Get Started</button>
+                                    <a href="Contact.html">
+                                        <button class="btn btn-danger">Get Started</button>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
-                           
+
+                        <!-- Mobile Navbar -->
                         <div class="modal fade" id="nav1">
                             <div class="modal-dialog">
                                 <div class="modal-content p-2">
                                     <button class="btn-close ms-auto" data-bs-dismiss="modal"></button>
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item border-0">
-                                            <a href="index.html" class="nav-link">Home</a>
+                                            <a href="index.html"
+                                                class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">Home</a>
                                         </li>
                                         <li class="list-group-item border-0">
-                                            <a href="Service.html" class="nav-link">Service</a>
+                                            <a href="Service.html"
+                                                class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">Service</a>
                                         </li>
                                         <li class="list-group-item border-0">
-                                            <a href="Portfolio.html" class="nav-link">Portfolio</a>
+                                            <a href="About.html"
+                                                class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">About</a>
                                         </li>
                                         <li class="list-group-item border-0">
-                                            <a href="Pricing.html" class="nav-link">Pricing</a>
+                                            <a href="Portfolio.html"
+                                                class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">Portfolio</a>
                                         </li>
                                         <li class="list-group-item border-0">
-                                            <a href="#" class="nav-link">Blog</a>
+                                            <a href="Pricing.html"
+                                                class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">Pricing</a>
+                                        </li>
+                                        <li class="list-group-item border-0">
+                                            <a href="Contact.html"
+                                                class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">Contact</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                    
+                        <!-- Mobile Navbar end -->
                     </nav>
                 </header>
             </div>
         </div>
     </div>
+    <!-- Navbar section End -->
 
-
+    <!-- About -->
     <div class="container-fluid" style=" background-color: #F2F4F6;">
         <div class="row">
             <div class="col-lg-12">
                 <div class=" d-flex justify-content-between align-content-center">
                     <h2 class="p-4 ms-5 mb-lg-0">ABOUT</h2>
                     <div class="align-content-center">
-                        <a class="text-decoration-none text-danger" href="">Home</a>/
-                        <a class="text-decoration-none text-black me-5" href="">About</a>
+                        <a class="text-decoration-none text-danger" href="index.html">Home</a>/
+                        <a class="text-decoration-none text-black me-5" href="Portfolio.html">Portfolio</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- About End -->
 
-    <div class="container">
+
+    <!-- Content Section Heading -->
+    <div class="container mt-5">
         <div class="row">
             <div class="col-lg-12">
+                <h2 class="text-center fs-1">Who We Are – Passionate Creators, Digital Innovators!</h2>
+                <p class="text-center fs-5 text-secondary">"At Sailor, we turn ideas into reality. Our team of
+                    designers, developers, and strategists <br> craft
+                    digital solutions that elevate brands and drive success."</p>
+            </div>
+        </div>
+    </div>
 
-                <div class="row justify-content-between">
-                    <div class="col-lg-4 position-relative">
-                        <img src="images/aboutbackground.png" class="mt-5 " alt="">
-                        <img src="images/aboutimage.jpg" alt="" width="80%" style="position: absolute;
-                        top: 16%;
-                        left: 16%;">
+    <!-- Content Section Start -->
+
+    <div class="container py-5">
+        <div class="row">
+            <!-- Left Side Image -->
+            <div class="col-lg-4 align-items-center d-flex justify-content-center">
+                <img class="rounded-3" src="./images/aboutimage.jpg" alt="" width="100%">
+            </div>
+
+            <!-- Right Side Content -->
+            <div class="col-lg-8">
+                <p class="fs-3 mt-4 mt-lg-0 text-secondary">"Empowering Brands with Innovation, Creativity &
+                    Technology!"</p>
+
+                <!-- Nav Tabs -->
+                <ul class="nav nav-pills mb-4  gap-2" id="pills-tab" role="tablist">
+                    <li class="nav-item " role="presentation">
+                        <button class="nav-link bg-danger text-white active" id="about-tab" data-bs-toggle="pill"
+                            data-bs-target="#about" type="button" role="tab">About Us</button>
+                    </li>
+                    <li class="nav-item " role="presentation">
+                        <button class="nav-link bg-danger text-white" id="mission-tab" data-bs-toggle="pill"
+                            data-bs-target="#mission" type="button" role="tab">Our Mission</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link bg-danger text-white" id="why-tab" data-bs-toggle="pill"
+                            data-bs-target="#why" type="button" role="tab">Why Choose Us?</button>
+                    </li>
+                </ul>
+
+                <!-- Tab Content -->
+                <div class="tab-content fs-5" id="pills-tabContent">
+                    <!-- About Us Tab -->
+                    <div class="tab-pane fade show active" id="about" role="tabpanel">
+                        <p>"Welcome to Sailor – a creative agency where ideas take shape and brands find their
+                            true identity. Our team of designers, developers, and strategists are passionate
+                            about delivering high-quality digital solutions that help businesses scale. From
+                            crafting stunning websites to executing powerful marketing strategies, we ensure
+                            that our clients get the best results."</p>
+
+                        <p>"We started with a simple vision: to provide businesses with innovative and
+                            customized digital solutions. Over the years, we have worked with startups,
+                            mid-sized companies, and enterprises, helping them establish a strong online
+                            presence. Our expertise lies in blending technology with creativity to create
+                            websites, brands, and marketing campaigns that make an impact."</p>
+
+
+                        <p>At Sailor, we don’t just build projects – we build long-term partnerships. Our
+                            approach is rooted in deep research, modern design trends, and the latest
+                            technologies, ensuring that every project we undertake is a masterpiece in itself."
+                        </p>
                     </div>
 
-                    <div class="col-lg-8 ">
-                        <nav>
-                            <p class="fs-3 mt-5">Neque officiis dolore maiores et exercitationem quae est seda lidera
-                                pat claero</p>
-                            <ul class="nav nav-tabs">
-                                <li class="nav-item"><a href="#home" class="nav-link active" data-bs-toggle="tab">Saepe
-                                        fuga</a></li>
-                                <li class="nav-item"><a href="#about" class="nav-link"
-                                        data-bs-toggle="tab">Voluptates</a>
-                                </li>
-                                <li class="nav-item"><a href="#service" class="nav-link"
-                                        data-bs-toggle="tab">Corrupti</a></li>
-                            </ul>
-                        </nav>
-                        <div class="tab-content">
-                            <div id="home" class="tab-pane fade show active">
-
-                                <p>Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita.
-                                    Sapiente
-                                    atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
-
-                                <i class="fa-light fa-check"></i>
-                                <span class="fw-bold">Repudiandae rerum velit modi et officia quasi facilis</span>
-                                <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi
-                                    dolorum
-                                    non eveniet magni quaerat nemo et.</p>
-
-                                <i class="fa-light fa-check"></i>
-                                <span class="fw-bold">Incidunt non veritatis illum ea ut nisi</span>
-                                <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta
-                                    tenetur. Iure
-                                    molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo
-                                    tempora.
-                                    Quia et perferendis.</p>
-
-                                <i class="fa-light fa-check"></i>
-                                <span class="fw-bold">Omnis ab quia nemo dignissimos rem eum quos..</span>
-                                <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam
-                                    officia aut
-                                    ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim
-                                    quaerat.
-                                    Vero error error voluptatem eum.</p>
-
-                            </div>
+                    <!-- Our Mission Tab -->
+                    <div class="tab-pane fade" id="mission" role="tabpanel">
+                        <p>"At Sailor, our mission is simple – to empower businesses with cutting-edge digital
+                            solutions that drive real growth. We believe that technology and creativity go hand
+                            in hand, and our goal is to provide services that help brands stand out in a crowded
+                            digital landscape."</p>
 
 
+                        <p>"Our core values revolve around innovation, transparency, and excellence. We take
+                            pride in staying ahead of trends and delivering results-driven solutions that cater
+                            to our clients' unique needs. Whether it’s developing a seamless website, designing
+                            a powerful brand identity, or running a high-converting marketing campaign, we are
+                            dedicated to bringing your vision to life."</p>
 
-                            <div id="about" class="tab-pane fade ">
+                        <p>"We also focus on continuous learning and improvement, ensuring that our team is
+                            always up-to-date with the latest industry practices. This allows us to provide
+                            top-tier services that not only meet but exceed expectations. When you work with us,
+                            you don’t just get an agency – you get a partner who is committed to your success."
+                        </p>
+                    </div>
 
-                                <p>Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita.
-                                    Sapiente
-                                    atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
-
-                                <i class="fa-light fa-check"></i>
-                                <span class="fw-bold">Repudiandae rerum velit modi et officia quasi facilis</span>
-                                <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi
-                                    dolorum
-                                    non eveniet magni quaerat nemo et.</p>
-
-                                <i class="fa-light fa-check"></i>
-                                <span class="fw-bold">Incidunt non veritatis illum ea ut nisi</span>
-                                <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta
-                                    tenetur. Iure
-                                    molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo
-                                    tempora.
-                                    Quia et perferendis.</p>
-
-                                <i class="fa-light fa-check"></i>
-                                <span class="fw-bold">Omnis ab quia nemo dignissimos rem eum quos..</span>
-                                <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam
-                                    officia aut
-                                    ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim
-                                    quaerat.
-                                    Vero error error voluptatem eum.</p>
-                            </div>
+                    <!-- Why Choose Us Tab -->
+                    <div class="tab-pane fade" id="why" role="tabpanel">
+                        <p>"Choosing the right agency for your digital needs is a crucial decision, and at
+                            Sailor, we make that choice easy. Here’s why businesses trust us:"</p>
 
 
-                            <div id="service" class="tab-pane fade ">
-                                <p>Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita.
-                                    Sapiente
-                                    atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
+                        <span class="fw-bold">✅ Experienced & Passionate Team:</span>
+                        <p>"Our team consists of skilled developers, designers, and marketers who are passionate
+                            about what they do. Every project is handled with creativity and precision."</p>
 
-                                <i class="fa-light fa-check"></i>
-                                <span class="fw-bold">Repudiandae rerum velit modi et officia quasi facilis</span>
-                                <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi
-                                    dolorum
-                                    non eveniet magni quaerat nemo et.</p>
 
-                                <i class="fa-light fa-check"></i>
-                                <span class="fw-bold">Incidunt non veritatis illum ea ut nisi</span>
-                                <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta
-                                    tenetur. Iure
-                                    molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo
-                                    tempora.
-                                    Quia et perferendis.</p>
+                        <span class="fw-bold">✅ Custom Solutions for Every Business:</span>
+                        <p>"We don’t believe in one-size-fits-all solutions. Each business has unique needs, and
+                            we tailor our strategies to fit those requirements perfectly."</p>
 
-                                <i class="fa-light fa-check"></i>
-                                <span class="fw-bold">Omnis ab quia nemo dignissimos rem eum quos..</span>
-                                <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam
-                                    officia aut
-                                    ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim
-                                    quaerat.
-                                    Vero error error voluptatem eum.</p>
 
+                        <span class="fw-bold">✅ Affordable & Scalable Solutions:</span>
+                        <p>"Whether you're a startup or an enterprise, we offer flexible pricing and scalable
+                            solutions that grow with your business."
+
+                            "When you work with Sailor, you're not just hiring an agency – you're gaining a team
+                            of experts dedicated to your brand’s success."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content Section End -->
+
+
+    <!-- Counter Section  -->
+    <div class="container-fluid py-4" style="background-color: #F2F4F6;">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-6 col-lg-3 mb-4 mb-lg-0">
+                    <h2 class="display-5 mb-1 counter" data-target="50" data-time="30">50+</h2>
+                    <p class="mb-0 fs-5">Global Clients</p>
+                </div>
+
+                <div class="col-6 col-lg-3 mb-4 mb-lg-0">
+                    <h2 class="display-5  mb-1 counter" data-target="100" data-time="10">100+</h2>
+                    <p class="mb-0 fs-5">Projects Delivered</p>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <h2 class="display-5  mb-1 counter" data-target="5" data-time="300">5+</h2>
+                    <p class="mb-0 fs-5">Years Experience</p>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <h2 class="display-5  mb-1 counter" data-target="10" data-time="100">10+</h2>
+                    <p class="mb-0 fs-5">Team Members</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Counter section End -->
+
+    <!-- Cards section -->
+
+    <div class="container mb-5 mt-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row ">
+
+                    <!-- 1st -->
+                    <div class="col-lg-6">
+                        <div class="card custom-gradient text-white">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="images/team img1.jpg" class="rounded-4  p-2" alt="" width="100%">
+                                </div>
+
+                                <div class="col-lg-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title mb-3">Walter White</h3>
+                                        <small class="card-subtitle fs-5">Chief Executive Officer</small>
+                                        <p class="card-text my-3" style="text-align: justify;">"With her expertise in
+                                            digital marketing, Sarah crafts strategies that maximize brand reach and
+                                            engagement."</p>
+                                        <div class="flex">
+                                            <i class="fa-brands fa-square-x-twitter fs-4"></i>
+                                            <i class="fa-brands fa-facebook fs-4"></i>
+                                            <i class="fa-brands fa-instagram fs-4"></i>
+                                            <i class="fa-brands fa-linkedin fs-4"></i>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                    </div>
 
+                    <!-- 2nd -->
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                        <div class="card custom-gradient text-white">
 
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="images/teamimg2.jpg" class="rounded-4  p-2" alt="" width="100%">
+                                </div>
+
+                                <div class="col-lg-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title mb-3">Emily Davis</h3>
+                                        <small class="card-subtitle fs-5">Head of Development</small>
+                                        <p class="card-text my-3" style="text-align: justify;">"Emily ensures that our
+                                            websites and apps are built with cutting-edge technology and best coding
+                                            practices."</p>
+                                        <i class="fa-brands fa-square-x-twitter fs-4"></i>
+                                        <i class="fa-brands fa-facebook fs-4"></i>
+                                        <i class="fa-brands fa-instagram fs-4"></i>
+                                        <i class="fa-brands fa-linkedin fs-4"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3rd -->
+                    <div class="col-lg-6">
+                        <div class="card mt-4 custom-gradient text-white">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="images/teamimg3.jpg" class="rounded-4  p-2" alt="" width="100%">
+                                </div>
+
+                                <div class="col-lg-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title mb-3">Michael Smith</h3>
+                                        <small class="card-subtitle fs-5">Lead UI/UX Designer</small>
+                                        <p class="card-text my-3" style="text-align: justify;">"Michael specializes in
+                                            creating visually stunning and highly functional designs that enhance user
+                                            experience."</p>
+                                        <i class="fa-brands fa-square-x-twitter fs-4"></i>
+                                        <i class="fa-brands fa-facebook fs-4"></i>
+                                        <i class="fa-brands fa-instagram fs-4"></i>
+                                        <i class="fa-brands fa-linkedin fs-4"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4th -->
+                    <div class="col-lg-6 mt-4">
+                        <div class="card custom-gradient text-white">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="images/teamimg4.jpg" class="rounded-4 p-2" alt="" width="100%">
+                                </div>
+
+                                <div class="col-lg-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title mb-3"> Olivia Wilson</h3>
+                                        <small class="card-subtitle fs-5">Client Relationship Manager </small>
+                                        <p class="card-text my-3" style="text-align: justify;">"Olivia builds strong
+                                            client connections, ensuring smooth communication, satisfaction, and
+                                            long-term partnerships."</p>
+                                        <i class="fa-brands fa-square-x-twitter fs-4"></i>
+                                        <i class="fa-brands fa-facebook fs-4"></i>
+                                        <i class="fa-brands fa-instagram fs-4"></i>
+                                        <i class="fa-brands fa-linkedin fs-4"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Cards Section End -->
 
-    <div class="container-fluid mb-5 mt-5" style="background-color: #F2F4F6;">
-        <div class="row">
-            <div class="col-lg-12">
-
-                <div class="row p-3 ">
-                    <div class="col-lg-3 text-center">
-                        <h2 class="fs-1">232</h2>
-                        <h6 class="fs-5">Client</h6>
-                    </div>
-
-                    <div class="col-lg-3 text-center">
-                        <h4 class="fs-1">521</h4>
-                        <h6 class="fs-5">Project</h6>
-                    </div>
-
-                    <div class="col-lg-3 text-center">
-                        <h4 class="fs-1">1453</h4>
-                        <h6 class="fs-5">Hours of Support</h6>
-                    </div>
-
-                    <div class="col-lg-3 text-center">
-                        <h4 class="fs-1">32</h4>
-                        <h6 class="fs-5">Workers</h6>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <!-- Skills Section -->
 
     <div class="container mb-5">
         <div class="row">
             <div class="col-lg-12">
-
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="card">
-
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <img src="images/team img1.jpg" class="rounded ps-4 pt-4" alt="" width="100%">
-                                </div>
-
-                                <div class="col-lg-8">
-                                    <div class="card-body">
-                                        <h3 class="card-title mb-3">Walter White</h3>
-                                        <small class="card-subtitle">Chief Executive Officer</small>
-                                        <p class="card-text my-3" style="text-align: justify;">Explicabo voluptatem
-                                            mollitia
-                                            et
-                                            repellat qui dolorum quasi</p>
-                                        <i class="fa-brands fa-square-x-twitter fs-4"></i>
-                                        <i class="fa-brands fa-facebook fs-4"></i>
-                                        <i class="fa-brands fa-instagram fs-4"></i>
-                                        <i class="fa-brands fa-linkedin fs-4"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="card">
-
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <img src="images/teamimg2.jpg" class="rounded ps-4 pt-4" alt="" width="100%">
-                                </div>
-
-                                <div class="col-lg-8">
-                                    <div class="card-body">
-                                        <h3 class="card-title mb-3">Walter White</h3>
-                                        <small class="card-subtitle">Chief Executive Officer</small>
-                                        <p class="card-text my-3" style="text-align: justify;">Explicabo voluptatem
-                                            mollitia
-                                            et
-                                            repellat qui dolorum quasi</p>
-                                        <i class="fa-brands fa-square-x-twitter fs-4"></i>
-                                        <i class="fa-brands fa-facebook fs-4"></i>
-                                        <i class="fa-brands fa-instagram fs-4"></i>
-                                        <i class="fa-brands fa-linkedin fs-4"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="card mt-4">
-
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <img src="images/teamimg3.jpg" class="rounded ps-4 pt-4" alt="" width="100%">
-                                </div>
-
-                                <div class="col-lg-8">
-                                    <div class="card-body">
-                                        <h3 class="card-title mb-3">Walter White</h3>
-                                        <small class="card-subtitle">Chief Executive Officer</small>
-                                        <p class="card-text my-3" style="text-align: justify;">Explicabo voluptatem
-                                            mollitia
-                                            et
-                                            repellat qui dolorum quasi</p>
-                                        <i class="fa-brands fa-square-x-twitter fs-4"></i>
-                                        <i class="fa-brands fa-facebook fs-4"></i>
-                                        <i class="fa-brands fa-instagram fs-4"></i>
-                                        <i class="fa-brands fa-linkedin fs-4"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="card mt-4">
-
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <img src="images/teamimg4.jpg" class="rounded ps-4 pt-4" alt="" width="100%">
-                                </div>
-
-                                <div class="col-lg-8">
-                                    <div class="card-body">
-                                        <h3 class="card-title mb-3">Walter White</h3>
-                                        <small class="card-subtitle">Chief Executive Officer</small>
-                                        <p class="card-text my-3" style="text-align: justify;">Explicabo voluptatem
-                                            mollitia
-                                            et
-                                            repellat qui dolorum quasi</p>
-                                        <i class="fa-brands fa-square-x-twitter fs-4"></i>
-                                        <i class="fa-brands fa-facebook fs-4"></i>
-                                        <i class="fa-brands fa-instagram fs-4"></i>
-                                        <i class="fa-brands fa-linkedin fs-4"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container mb-5">
-        <div class="row">
-            <div class="col-lg-12">
-                <h5>SKILLS</h5>
-                <h4>Check Our Skills</h4>
+                <h2 class="fs-1 text-secondary text-center">SKILLS</h2>
+                <h4 class="text-center fs-2 mt-3">Check Our Skills</h4>
 
                 <div class="row mt-5">
                     <div class="col-lg-6">
-                        <h5>HTML</h5>
+                        <h5>Web Development</h5>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 100%;">100%</div>
+                            <div class="progress-bar bg-danger" style="width: 95%;">95%</div>
                         </div>
                     </div>
 
                     <div class="col-lg-6">
-                        <h5>PHP</h5>
+                        <h5>UI/UX Design</h5>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 80%;">80%</div>
+                            <div class="progress-bar bg-danger" style="width: 90%;">90%</div>
                         </div>
                     </div>
 
-                    <div class="col-lg-6">
-                        <h5>CSS</h5>
+                    <div class="col-lg-6 mt-3">
+                        <h5>Branding & Identity</h5>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 90%;">90%</div>
+                            <div class="progress-bar bg-danger" style="width: 85%;">85%</div>
                         </div>
                     </div>
 
-                    <div class="col-lg-6">
-                        <h5>WordPress/CMS</h5>
+                    <div class="col-lg-6 mt-3">
+                        <h5>SEO & Digital Marketing </h5>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 90%;">90%</div>
+                            <div class="progress-bar bg-danger" style="width: 80%;">80%</div>
                         </div>
                     </div>
 
-                    <div class="col-lg-6">
-                        <h5>Javascript</h5>
+                    <div class="col-lg-6 mt-3">
+                        <h5>E-commerce Solutions</h5>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 75%">75%</div>
+                            <div class="progress-bar bg-danger" style="width: 75%">75%</div>
                         </div>
                     </div>
 
-                    <div class="col-lg-6">
-                        <h5>Photoshop</h5>
+                    <div class="col-lg-6 mt-3">
+                        <h5>Creative Problem Solving</h5>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 55%;">55%</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <div class="container-fluid bg-secondary text-white mt-5">
-        <div class="row">
-            <div class="col-lg-12">
-
-                <div class="row">
-                    <div class="col-lg-4 pt-5 ps-5">
-                        <h4>Sailor</h4>
-                        <p>A108 Adam Street
-                            New York, NY 535022</p>
-                        <span class="fw-bold">Phone:</span> +1 5589 55488 55 <br>
-                        <span class="fw-bold">Email:</span> Info@example.com <br> <br>
-                        <i class="fa-brands fa-square-x-twitter fs-4"></i>
-                        <i class="fa-brands fa-facebook fs-4"></i>
-                        <i class="fa-brands fa-instagram fs-4"></i>
-                        <i class="fa-brands fa-linkedin fs-4"></i>
-                    </div>
-
-                    <div class="col-lg-2 p-5">
-                        <h5>UseFul Links</h5>
-                        <ul class="list-unstyled lh-lg">
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Service</li>
-                            <li>Terms & services</li>
-                            <li>Privacy Policy</li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-2 p-5">
-                        <h5>Our Services</h5>
-                        <ul class="list-unstyled lh-lg">
-                            <li>Web Design</li>
-                            <li>Web Development</li>
-                            <li>Product Management</li>
-                            <li>Marketing</li>
-                            <li>Graphic Design</li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-4 p-5">
-                        <h5>Our Newsletter</h5>
-                        <p>Subscribe to our newsletter and receive the latest news about our products and services!
-                        </p>
-
-                        <div class="input-group">
-                            <input type="text" class="form-control">
-                            <button class="input-group-text btn btn-primary">Subscribe</button>
+                            <div class="progress-bar bg-danger" style="width: 85%;">85%</div>
                         </div>
                     </div>
                 </div>
@@ -483,8 +440,108 @@
         </div>
     </div>
 
+    <!-- Skills section End -->
 
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid custom-gradient text-white mt-5">
+            <div class="row">
+                <div class="col-lg-12">
 
+                    <div class="row">
+                        <div class="col-lg-3 p-lg-3 mt-4 text-center text-lg-start">
+                            <a class="text-decoration-none" href="index.html">
+                                <h4 class="fs-3 text-white">Agenci</h4>
+                            </a>
+                            <p>A108 Adam Street
+                                New York, NY 535022</p>
+                            <span class="fw-bold">Phone:</span> +1 5589 55488 55 <br>
+                            <span class="fw-bold">Email:</span> Info@example.com <br> <br>
+                            <div>
+                                <a class="text-decoration-none px-2 text-white" href="https://x.com/">
+                                    <i class="fa-brands fa-square-x-twitter fs-4 "></i>
+                                </a>
+
+                                <a class="text-decoration-none px-2" href="https://www.facebook.com/">
+                                    <i class="fa-brands fa-facebook fs-4  text-white"></i>
+                                </a>
+
+                                <a class="text-decoration-none px-2" href="https://www.instagram.com/">
+                                    <i class="fa-brands fa-instagram fs-4  text-white"></i>
+                                </a>
+
+                                <a class="text-decoration-none px-2" href="https://www.linkedin.com/">
+                                    <i class="fa-brands fa-linkedin fs-4  text-white"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-3 p-lg-3 mt-4 text-center text-lg-start">
+                            <h5 class="fs-4">UseFul Links</h5>
+                            <ul class="list-unstyled lh-lg ">
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none  fs-5" href="About.html">About</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none  fs-5" href="Service.html">Services</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none  fs-5" href="Portfolio.html">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Pricing.html">Pricing</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 p-lg-3 mt-4 text-center text-lg-start">
+                            <h5 class="fs-4">Our Services</h5>
+                            <ul class="list-unstyled lh-lg">
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Service.html">Web Design</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Service.html">Web
+                                        Development</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Service.html">Product
+                                        Management</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Service.html">Marketing</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Service.html">Graphic
+                                        Design</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 p-lg-3 mt-4 text-center text-lg-start">
+                            <h5 class="fs-4">Our Newsletter</h5>
+                            <p>Subscribe to our newsletter and receive the latest news about our products and services!
+                            </p>
+
+                            <div class="input-group">
+                                <input type="text" class="form-control">
+                                <button class="input-group-text btn btn-danger">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer End -->
 
     <script src="js/index.js"></script>
     <script src="../Bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>

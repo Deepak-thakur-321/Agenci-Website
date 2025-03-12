@@ -15,14 +15,22 @@
 
 <body>
 
-    <div class="container-fluid bg-secondary">
+    <div class="container-fluid bg-secondary customNav">
         <div class="row">
             <div class="col-lg-12">
                 <header>
-                    <nav class="navbar navbar-expand-lg bg-secondary">
-                        <a href="" class="navbar-brand fs-3 ms-5 text-white">SAILOR</a>
+                    <!-- Desktop Navbar start -->
+                    <nav class="navbar navbar-expand-lg bg-secondary customNavbar">
+                        <a href="index.html" class="navbar-brand fs-3 ms-5 text-white d-flex align-items-center gap-1">
+                            <span
+                                class="fs-1 fw-bold d-inline-block text-dark bg-white border border-white rounded-circle text-center"
+                                style="width: 45px; height: 45px; line-height: 43px;">
+                                A
+                            </span>
+                            <span class="fw-light" style="letter-spacing: 2px;">genci</span>
+                        </a>
 
-                        <button class="navbar-toggler" data-bs-toggle="modal" data-bs-target="#nav1">
+                        <button class="navbar-toggler bg-white" data-bs-toggle="modal" data-bs-target="#nav1">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
@@ -44,207 +52,404 @@
                                     <a href="Pricing.html" class="nav-link text-white">Pricing</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="" class="nav-link text-white">Blog</a>
-                                </li>
-                                <li class="nav-item">
                                     <a href="Contact.html" class="nav-link text-white">Contact</a>
                                 </li>
                                 <li class="nav-item align-content-center">
-                                    <button class="btn btn-primary">Get Started</button>
+                                    <a href="Contact.html">
+                                        <button class="btn btn-danger">Get Started</button>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
-                           
+                        <!-- Desktop Navbar end -->
+
+                        <!-- Mobile Navbar Start -->
                         <div class="modal fade" id="nav1">
                             <div class="modal-dialog">
                                 <div class="modal-content p-2">
                                     <button class="btn-close ms-auto" data-bs-dismiss="modal"></button>
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item border-0">
-                                            <a href="index.html" class="nav-link">Home</a>
+                                            <a href="index.html"
+                                                class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">Home</a>
                                         </li>
                                         <li class="list-group-item border-0">
-                                            <a href="Service.html" class="nav-link">Service</a>
+                                            <a href="Service.html"
+                                                class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">Service</a>
                                         </li>
                                         <li class="list-group-item border-0">
-                                            <a href="Portfolio.html" class="nav-link">Portfolio</a>
+                                            <a href="About.html"
+                                                class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">About</a>
                                         </li>
                                         <li class="list-group-item border-0">
-                                            <a href="Pricing.html" class="nav-link">Pricing</a>
+                                            <a href="Portfolio.html"
+                                                class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">Portfolio</a>
                                         </li>
                                         <li class="list-group-item border-0">
-                                            <a href="#" class="nav-link">Blog</a>
+                                            <a href="Pricing.html"
+                                                class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">Pricing</a>
+                                        </li>
+                                        <li class="list-group-item border-0">
+                                            <a href="Contact.html"
+                                                class="nav-link fw-semibold bg-secondary p-2 rounded-3 text-white">Contact</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                    
+                        <!-- Mobile Navbar End -->
                     </nav>
                 </header>
             </div>
         </div>
     </div>
+    <!-- Navbar End -->
 
+    <!-- Pricing -->
     <div class="container-fluid" style=" background-color: #F2F4F6;">
         <div class="row">
             <div class="col-lg-12">
                 <div class=" d-flex justify-content-between align-content-center">
                     <h2 class="p-4 ms-5 mb-lg-0">Pricing</h2>
                     <div class="align-content-center">
-                        <a class="text-decoration-none text-danger" href="">Home</a>/
-                        <a class="text-decoration-none text-black me-5" href="">Pricing</a>
+                        <a class="text-decoration-none text-danger" href="index.html">Home</a>/
+                        <a class="text-decoration-none text-black me-5" href="Contact.html">Contact</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-lg-3">
-
-                <div class="card">
-                    <div class="card-header text-center ">
-                        <h3 class="card-title mb-3">Free</h3>
-
-                    </div>
-                    <div class="card-body text-center lh-lg">
-                        <h4 class="card-subtitle"><sup>$</sup>0/month</h4>
-                        <ul class="card-text list-unstyled mt-3 lh-lg">
-                            <li>Aida dere</li>
-                            <li>Nec feugiat nisl</li>
-                            <li>Nulla at volutpat dola</li>
-                            <li class="text-decoration-line-through">Pharetra massa</li>
-                            <li class="text-decoration-line-through">Massa ultricies mi</li>
-                        </ul>
-                    </div>
-                    <div class="card-footer text-center border-top-0">
-                        <button class="btn btn-danger">Buy Now</button>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3">
-
-                <div class="card">
-                    <div class="card-header text-center">
-                        <h3 class="card-title mb-3">Business</h3>
-                    </div>
-                    <div class="card-body text-center lh-lg">
-                      
-                        <h4 class="card-subtitle"><sup>$</sup>19/month</h4>
-                        <ul class="card-text list-unstyled mt-3">
-                            <li>Aida dere</li>
-                            <li>Nec feugiat nisl</li>
-                            <li>Nulla at volutpat dola</li>
-                            <li>Pharetra massa</li>
-                            <li class="text-decoration-line-through">Massa ultricies mi</li>
-                        </ul>
-                        <button class="btn btn-danger">Buy Now</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3">
-
-                <div class="card">
-                    <div class="card-header text-center">
-                        <h3 class="card-title mb-3">Developer</h3>
-                    </div>
-                    <div class="card-body text-center lh-lg">
-                       
-                        <h4 class="card-subtitle"><sup>$</sup>29/month</h4>
-                        <ul class="card-text list-unstyled mt-3">
-                            <li>Aida dere</li>
-                            <li>Nec feugiat nisl</li>
-                            <li>Nulla at volutpat dola</li>
-                            <li>Pharetra massa</li>
-                            <li>Massa ultricies mi</li>
-                        </ul>
-                        <button class="btn btn-danger">Buy Now</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3">
-
-                <div class="card">
-                    <div class="card-header text-center text-center ">
-                        <h3 class="card-title mb-3">Ultimate</h3>
-                    </div>
-                    <div class="card-body text-center lh-lg">
-                       
-                        <h4 class="card-subtitle"><sup>$</sup>49/month</h4>
-                        <ul class="card-text list-unstyled mt-3">
-                            <li>Aida dere</li>
-                            <li>Nec feugiat nisl</li>
-                            <li>Nulla at volutpat dola</li>
-                            <li>Pharetra massa</li>
-                            <li>Massa ultricies mi</li>
-                        </ul>
-                        <button class="btn btn-danger">Buy Now</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container-fluid bg-secondary text-white mt-5">
+    <!-- Pricing Heading -->
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
+                <section class="text-center  mt-5">
+                    <h1 class="fw-semibold">Flexible Pricing for Every Need</h1>
+                    <p class="lead text-muted">Choose a plan that fits your business size and needs. Start free and
+                        scale as you
+                        grow.</p>
+                </section>
+            </div>
+        </div>
+    </div>
 
-                <div class="row">
-                    <div class="col-lg-4 pt-5 ps-5">
-                        <h4>Sailor</h4>
-                        <p>A108 Adam Street
-                            New York, NY 535022</p>
-                        <span class="fw-bold">Phone:</span> +1 5589 55488 55 <br>
-                        <span class="fw-bold">Email:</span> Info@example.com <br> <br>
-                        <i class="fa-brands fa-square-x-twitter fs-4"></i>
-                        <i class="fa-brands fa-facebook fs-4"></i>
-                        <i class="fa-brands fa-instagram fs-4"></i>
-                        <i class="fa-brands fa-linkedin fs-4"></i>
+    <!-- Cards Section -->
+    <div class="container py-5">
+        <div class="row justify-content-center g-4">
+
+            <!-- Starter Plan -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card border rounded-4 shadow h-100">
+                    <div class="card-header text-center bg-light">
+                        <h3 class="card-title mb-1">Starter</h3>
+                        <p class="text-muted mb-0">Best for getting started</p>
                     </div>
-
-                    <div class="col-lg-2 p-5">
-                        <h5>UseFul Links</h5>
-                        <ul class="list-unstyled lh-lg">
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Service</li>
-                            <li>Terms & services</li>
-                            <li>Privacy Policy</li>
+                    <div class="text-center py-4">
+                        <h2 class="fw-bold mb-0">
+                            <sup style="font-size: 18px;">$</sup>0<span class="fs-6 text-muted">/month</span>
+                        </h2>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <ul class="list-unstyled mb-4">
+                            <li class="py-2 border-bottom">✅ Basic Access to Platform</li>
+                            <li class="py-2 border-bottom">✅ Limited Support</li>
+                            <li class="py-2 border-bottom">✅ Community Resources</li>
+                            <li class="py-2 border-bottom">✅ 1 Active Project</li>
+                            <li class="py-2">✅ Basic Analytics</li>
                         </ul>
+                        <div class="d-grid">
+                            <button class="btn btn-danger rounded-2 fw-semibold py-2">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Standard Plan (Recommended) -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card border border-danger rounded-4 shadow h-100">
+                    <div class="card-header text-center bg-light">
+                        <h3 class="card-title mb-1">Standard</h3>
+                        <p class="text-muted mb-0">Perfect for small teams</p>
                     </div>
 
-                    <div class="col-lg-2 p-5">
-                        <h5>Our Services</h5>
-                        <ul class="list-unstyled lh-lg">
-                            <li>Web Design</li>
-                            <li>Web Development</li>
-                            <li>Product Management</li>
-                            <li>Marketing</li>
-                            <li>Graphic Design</li>
+                    <div class="text-center py-4">
+                        <h2 class="fw-bold mb-0">
+                            <sup style="font-size: 18px;">$</sup>29<span class="fs-6 text-muted">/month</span>
+                        </h2>
+                    </div>
+
+                    <div class="px-4 pb-4">
+                        <ul class="list-unstyled mb-4">
+                            <li class="py-2 border-bottom">✅ Everything in Starter</li>
+                            <li class="py-2 border-bottom">✅ Priority Support</li>
+                            <li class="py-2 border-bottom">✅ Unlimited Projects</li>
+                            <li class="py-2 border-bottom">✅ Team Collaboration</li>
+                            <li class="py-2">✅ Advanced Analytics</li>
                         </ul>
+
+                        <div class="d-grid">
+                            <button class="btn btn-danger rounded-2 fw-semibold py-2">Choose Plan</button>
+                        </div>
+
                     </div>
+                </div>
+            </div>
 
-                    <div class="col-lg-4 p-5">
-                        <h5>Our Newsletter</h5>
-                        <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+            <!-- Premium Plan -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card border rounded-4 shadow h-100">
+                    <div class="card-header text-center bg-light">
+                        <h3 class="card-title mb-1">Premium</h3>
+                        <p class="text-muted mb-0">For growing businesses</p>
+                    </div>
+                    <div class="text-center py-4">
+                        <h2 class="fw-bold mb-0">
+                            <sup style="font-size: 18px;">$</sup>59<span class="fs-6 text-muted">/month</span>
+                        </h2>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <ul class="list-unstyled mb-4">
+                            <li class="py-2 border-bottom">✅ Everything in Standard</li>
+                            <li class="py-2 border-bottom">✅ Premium Support</li>
+                            <li class="py-2 border-bottom">✅ Custom Integrations</li>
+                            <li class="py-2 border-bottom">✅ Multiple Teams</li>
+                            <li class="py-2">✅ Detailed Analytics</li>
+                        </ul>
+                        <div class="d-grid">
+                            <button class="btn btn-danger rounded-2 fw-semibold py-2">Choose Plan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                        <div class="input-group">
-                            <input type="text" class="form-control">
-                            <button class="input-group-text btn btn-primary">Subscribe</button>
+            <!-- Enterprise Plan -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card border rounded-4 shadow h-100">
+                    <div class="card-header text-center bg-light">
+                        <h3 class="card-title mb-1">Enterprise</h3>
+                        <p class="text-muted mb-0">Best for large organizations</p>
+                    </div>
+                    <div class="text-center py-4">
+                        <h2 class="fw-bold mb-0">
+                            <sup style="font-size: 18px;">$</sup>99<span class="fs-6 text-muted">/month</span>
+                        </h2>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <ul class="list-unstyled mb-4">
+                            <li class="py-2 border-bottom">✅ Everything in Premium</li>
+                            <li class="py-2 border-bottom">✅ Dedicated Account Manager</li>
+                            <li class="py-2 border-bottom">✅ SLA & Custom Features</li>
+                            <li class="py-2 border-bottom">✅ Unlimited Team Members</li>
+                            <li class="py-2">✅ Full Analytics Suite</li>
+                        </ul>
+                        <div class="d-grid">
+                            <button class="btn btn-danger rounded-2 fw-semibold py-2">Contact Us</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Cards Section End -->
+
+    <!-- Accordion Section Start -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <section class="mt-5">
+                    <h2 class="text-center fw-bold mb-4">Frequently Asked Questions</h2>
+                    <div class="accordion shadow " id="faqAccordion">
+
+                        <!-- 1st -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1">
+                                    Can I upgrade my plan later?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! You can upgrade or downgrade your plan anytime from your dashboard.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2nd -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2">
+                                    What payment methods do you accept?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We accept all major credit/debit cards, PayPal, and bank transfers.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3rd -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq3">
+                                    Do you offer any discounts for long-term commitments?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely! We offer special discounts on annual subscriptions. Contact our sales
+                                    team to learn more about custom pricing for long-term plans.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4th -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq4">
+                                    Is there a money-back guarantee?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! We offer a 14-day money-back guarantee on all our paid plans. If you’re not
+                                    satisfied, reach out to us within 14 days of your purchase, and we’ll refund you—no
+                                    questions asked.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- Accordion Section End -->
+
+
+    <!-- CTA Section -->
+    <div class="container my-5">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-10">
+                <section class="py-4">
+                    <h3 class="fw-semibold mb-3">Not sure which plan is the best fit for your business?</h3>
+                    <p class="lead text-muted mb-4">
+                        Our team is here to help you choose the perfect solution tailored to your needs.
+                        Get in touch with us for personalized guidance.
+                    </p>
+                    <a href="Contact.html" class="btn btn-danger btn-lg px-4">Contact Our Sales Team</a>
+                    <p class="text-muted mt-3">We usually respond within 24 hours.</p>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- CTA section End -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid custom-gradient text-white mt-5">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="row">
+                        <div class="col-lg-3 p-lg-3 mt-4 text-center text-lg-start">
+                            <a class="text-decoration-none" href="index.html">
+                                <h4 class="fs-3 text-white">Agenci</h4>
+                            </a>
+                            <p>A108 Adam Street
+                                New York, NY 535022</p>
+                            <span class="fw-bold">Phone:</span> +1 5589 55488 55 <br>
+                            <span class="fw-bold">Email:</span> Info@example.com <br> <br>
+                            <div>
+                                <a class="text-decoration-none px-2 text-white" href="https://x.com/">
+                                    <i class="fa-brands fa-square-x-twitter fs-4 "></i>
+                                </a>
+
+                                <a class="text-decoration-none px-2" href="https://www.facebook.com/">
+                                    <i class="fa-brands fa-facebook fs-4  text-white"></i>
+                                </a>
+
+                                <a class="text-decoration-none px-2" href="https://www.instagram.com/">
+                                    <i class="fa-brands fa-instagram fs-4  text-white"></i>
+                                </a>
+
+                                <a class="text-decoration-none px-2" href="https://www.linkedin.com/">
+                                    <i class="fa-brands fa-linkedin  text-white"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-3 p-lg-3 mt-4 text-center text-lg-start">
+                            <h5 class="fs-4">UseFul Links</h5>
+                            <ul class="list-unstyled lh-lg ">
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none  fs-5" href="About.html">About</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none  fs-5" href="Service.html">Services</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none  fs-5" href="Portfolio.html">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Pricing.html">Pricing</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 p-lg-3 mt-4 text-center text-lg-start">
+                            <h5 class="fs-4">Our Services</h5>
+                            <ul class="list-unstyled lh-lg">
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Service.html">Web Design</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Service.html">Web
+                                        Development</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Service.html">Product
+                                        Management</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Service.html">Marketing</a>
+                                </li>
+                                <li>
+                                    <a class="text-white text-decoration-none fs-5" href="Service.html">Graphic
+                                        Design</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 p-lg-3 mt-4 text-center text-lg-start">
+                            <h5 class="fs-4">Our Newsletter</h5>
+                            <p>Subscribe to our newsletter and receive the latest news about our products and services!
+                            </p>
+
+                            <div class="input-group">
+                                <input type="text" class="form-control">
+                                <button class="input-group-text btn btn-danger">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer End -->
+
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
