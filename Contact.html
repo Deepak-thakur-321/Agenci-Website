@@ -157,24 +157,39 @@
                     <!-- Form Area -->
                     <div class="col-lg-7">
                         <div class="p-4 shadow rounded-3 bg-white">
-                            <form>
+                            <form id="contactForm">
+                                <!-- Name -->
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                    <div class="text-danger mt-1" id="nameError"></div>
                                 </div>
+
+                                <!-- Email -->
                                 <div class="mb-3">
-                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email"
+                                        required>
+                                    <div class="text-danger mt-1" id="emailError"></div>
                                 </div>
+
+                                <!-- Subject -->
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" placeholder="Subject" required>
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                                    <div class="text-danger mt-1" id="subjectError"></div>
                                 </div>
+
+                                <!-- Message -->
                                 <div class="mb-3">
-                                    <textarea class="form-control" rows="5" placeholder="Your Message"
+                                    <textarea class="form-control" rows="5" id="message" placeholder="Your Message"
                                         required></textarea>
+                                    <div class="text-danger mt-1" id="messageError"></div>
                                 </div>
+
+                                <!-- Submit Button -->
                                 <button type="submit" class="btn btn-danger w-100 py-2">Send Message</button>
                             </form>
                         </div>
                     </div>
+
                 </div>
 
             </div>
@@ -282,6 +297,79 @@
 
     <!-- footer End -->
 
+    <script>
+
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault(); // stop form from submitting
+
+            let isValid = true;
+
+            // Get values
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const subject = document.getElementById("subject").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            // Name validation
+            if (name.length < 3) {
+                document.getElementById("nameError").innerText = "Name must be at least 3 characters";
+                isValid = false;
+            } else {
+                document.getElementById("nameError").innerText = "";
+            }
+
+            // Email validation
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                document.getElementById("emailError").innerText = "Enter a valid email address";
+                isValid = false;
+            } else {
+                document.getElementById("emailError").innerText = "";
+            }
+
+            // Subject validation
+            if (subject.length < 3) {
+                document.getElementById("subjectError").innerText = "Subject must be at least 3 characters";
+                isValid = false;
+            } else {
+                document.getElementById("subjectError").innerText = "";
+            }
+
+            // Message validation
+            if (message.length < 10) {
+                document.getElementById("messageError").innerText = "Message must be at least 10 characters";
+                isValid = false;
+            } else {
+                document.getElementById("messageError").innerText = "";
+            }
+
+            // If all valid, save to localStorage
+            if (isValid) {
+                const formData = {
+                    name,
+                    email,
+                    subject,
+                    message,
+                    submittedAt: new Date().toISOString()
+                };
+
+                // Get existing submissions
+                let submissions = JSON.parse(localStorage.getItem("contactForm")) || [];
+
+                // Add new submission
+                submissions.push(formData);
+
+                // Save back to localStorage
+                localStorage.setItem("contactForm", JSON.stringify(submissions));
+
+                // Clear form
+                e.target.reset();
+
+                alert("Form submitted successfully!");
+            }
+        });
+
+    </script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
